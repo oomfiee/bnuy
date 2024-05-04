@@ -22,10 +22,11 @@ modules:
        #- https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
       # - micro
-      # - starship
+       - starship
        - fish
       # - kate
       # - fonts
+       - git
        - fastfetch
       # - toolbx
        - ibm-plex-sans-fonts
@@ -42,7 +43,7 @@ modules:
        - plymouth-theme-spinner 
        - plymouth-plugin-two-step 
        - plymouth-system-theme
-       # - firewalld
+       - firewalld
        #- Fedora-release-identity-kde
        #- fedora-release
        #- f40-backgrounds
@@ -65,6 +66,7 @@ modules:
          - io.github.NhekoReborn.Nheko
          - io.mpv.Mpv
          - org.inkscape.Inkscape
+         - com.valvesoftware.Steam
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
