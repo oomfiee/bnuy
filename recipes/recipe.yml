@@ -43,7 +43,7 @@ modules:
        - plymouth-theme-spinner 
        - plymouth-plugin-two-step 
        - plymouth-system-theme
-       - firewalld
+       - firewall-applet
        #- Fedora-release-identity-kde
        #- fedora-release
        #- f40-backgrounds
