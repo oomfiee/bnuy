@@ -44,9 +44,10 @@ modules:
        - plymouth-system-theme
        # - firewalld
        #- Fedora-release-identity-kde
-       - fedora-release
+       #- fedora-release
        #- f40-backgrounds
        - fedora-logos
+       - adwaita-dark
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)

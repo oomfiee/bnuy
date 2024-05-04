@@ -70,6 +70,8 @@ jobs:
           enable_flatpak_dependencies: "false"
           extra_boot_params: ${{ steps.generate-extra-params.outputs.extra-boot-params }}
           #additional_templates: '/github/workspace/installer/lorax_templates/remove_root_password_prompt.tmpl'
+          flatpak_remote_name: "flathub-system"
+          flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
       - name: Upload ISO as artifact
         id: upload
         uses: actions/upload-artifact@v4
