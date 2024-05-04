@@ -46,7 +46,7 @@ modules:
        #- Fedora-release-identity-kde
        #- fedora-release
        #- f40-backgrounds
-       - fedora-logos
+       #- fedora-logos
        - adwaita-gtk2-theme
        - adwaita-icon-theme
        - adwaita-qt6
