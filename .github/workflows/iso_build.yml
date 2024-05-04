@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         image_name:
-          - carrots
+          - bnuy
         major_version: [40]
     steps:
 
