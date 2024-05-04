@@ -48,9 +48,6 @@ modules:
        #- f40-backgrounds
        #- fedora-logos
        - adwaita-gtk2-theme
-       - adwaita-icon-theme
-       - adwaita-qt6
-       - adwaita-qt5
        #- adwaita-cursor-theme
 
   - type: default-flatpaks
