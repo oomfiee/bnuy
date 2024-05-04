@@ -51,7 +51,7 @@ modules:
        - adwaita-icon-theme
        - adwaita-qt6
        - adwaita-qt5
-       - adwaita-cursor-theme
+       #- adwaita-cursor-theme
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
