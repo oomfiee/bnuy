@@ -47,7 +47,11 @@ modules:
        #- fedora-release
        #- f40-backgrounds
        - fedora-logos
-       - adwaita-dark
+       - adwaita-gtk2-theme
+       - adwaita-icon-theme
+       - adwaita-qt6
+       - adwaita-qt5
+       - adwaita-cursor-theme
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
