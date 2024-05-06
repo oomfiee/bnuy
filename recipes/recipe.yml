@@ -32,8 +32,10 @@ modules:
        - ibm-plex-sans-fonts
        - syncthing
        #- trackma-qt
-       - wl-clipboard
+       - xclip
        - nu
+       - xdg-desktop-portal-kde
+       - xdg-desktop-portal-gtk
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
