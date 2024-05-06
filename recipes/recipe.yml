@@ -92,9 +92,5 @@ modules:
     files:
         - usr: /usr
 
-  - type: script
-    snippets:
-        - "git clone https://github.com/arkenfox/user.js > /home/oomfie/" # example: download binary
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
