@@ -103,5 +103,14 @@ modules:
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
 
+  - type: chezmoi
+    install_chezmoi: true
+    repository: "https://codeberg.org/oomfie/carrots"
+    enable_all_users: true
+    run_every: '1d'
+    wait_after_boot: '5m'
+    disable_init: false
+    disable_update: false
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
