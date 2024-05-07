@@ -97,9 +97,9 @@ modules:
          - IBM Plex Sans
          - IBM Plex Serif
 
-  #- type: files
-  #  files:
-  #      - usr: /usr
+  - type: files
+    files:
+        - usr: /usr
 
   - type: script
     snippets:
