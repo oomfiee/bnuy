@@ -58,13 +58,6 @@ modules:
        #- adwaita-cursor-theme
        - noopenh264
        - mesa-va-drivers
-       - libavcodec-free
-       - libavfilter-free
-       - libavformat-free
-       - libavutil-free
-       - libpostproc-free
-       - libswresample-free
-       - libswscale-free
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
