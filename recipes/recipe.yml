@@ -89,9 +89,9 @@ modules:
          - IBM Plex Sans
          - IBM Plex Serif
 
-  - type: files
-    files:
-        - usr: /usr
+  #- type: files
+  #  files:
+  #      - usr: /usr
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
