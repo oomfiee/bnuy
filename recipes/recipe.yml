@@ -96,7 +96,6 @@ modules:
          - IBM Plex Sans
          - IBM Plex Serif
          - Manrope
-         - Montserrat
 
   - type: script
     snippets:
