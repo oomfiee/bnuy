@@ -89,9 +89,9 @@ modules:
 
   - type: fonts
     fonts:
-         - JetBrainsMono
       google-fonts:
          - Noto Color Emoji
+         - JetBrainsMono
          - IBM Plex Sans
          - IBM Plex Serif
          - Manrope
