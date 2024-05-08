@@ -91,7 +91,7 @@ modules:
     fonts:
       google-fonts:
          - Noto Color Emoji
-         - JetBrainsMono
+         - Jetbrains Mono
          - IBM Plex Sans
          - IBM Plex Serif
          - Manrope
