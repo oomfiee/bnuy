@@ -37,6 +37,7 @@ modules:
        - gstreamer1-plugin-openh264
        - mesa-va-drivers-freeworld
        - ffmpeg
+       - jetbrains-mono-fonts
       # - nextdns
 
     remove:
@@ -91,7 +92,6 @@ modules:
     fonts:
       google-fonts:
          - Noto Color Emoji
-         - Jetbrains Mono
          - IBM Plex Sans
          - IBM Plex Serif
          - Manrope
