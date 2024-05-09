@@ -39,6 +39,8 @@ modules:
        - ffmpeg
        - jetbrains-mono-fonts
       # - nextdns
+       - xdg-desktop-portal-kde
+       - xdg-desktop-portal
 
     remove:
       # example: removing firefox (in favor of the flatpak)
