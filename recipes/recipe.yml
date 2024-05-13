@@ -136,7 +136,7 @@ modules:
     #  masked:
     #    - example.service # Masked (does not run for the user, under any circumstances)
     #  unmasked:
-        - example.service # Unmasked (runs for the user, even if previously masked)
+    #    - example.service # Unmasked (runs for the user, even if previously masked)
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
