@@ -118,6 +118,25 @@ modules:
     # - ublue-update # https://github.com/ublue-os/ublue-update
       - laptop # installs TLP and configures your system for laptop usage
     # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
+  - type: systemd
+    system:
+      enabled:
+        - syncthing@oomfie.service # Enabled (runs on system boot)
+      disabled:
+        - bluetooth.service
+    #  masked:
+    #    - example.service # Masked (does not run on system boot, under any circumstances)
+    #  unmasked:
+    #    - example.service # Unmasked (runs on system boot, even if previously masked)
+    #user:
+    #  enabled:
+    #    - example.timer # Enabled (runs for the user)
+    #  disabled:
+    #    - example.service # Disabled (does not run for the user, unless other unit strictly requires it)
+    #  masked:
+    #    - example.service # Masked (does not run for the user, under any circumstances)
+    #  unmasked:
+        - example.service # Unmasked (runs for the user, even if previously masked)
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
