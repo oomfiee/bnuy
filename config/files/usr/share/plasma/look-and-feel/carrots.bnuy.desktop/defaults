@@ -10,6 +10,9 @@ Theme=breeze
 [plasmarc][Theme]
 name=default
 
+[Wallpaper]
+Image=/usr/share/sddm/themes/breeze/wallhaven-9m9lgk_1920x1080.png
+
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
 
