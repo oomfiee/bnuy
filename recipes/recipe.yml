@@ -119,14 +119,5 @@ modules:
       - laptop # installs TLP and configures your system for laptop usage
     # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
-  - type: system
-  #  system:
-  #    enabled:
-  #     - syncthing@oomfie.service
-
-    user:
-      enabled:
-       - syncthing.service
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
