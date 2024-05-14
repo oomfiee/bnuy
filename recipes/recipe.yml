@@ -4,7 +4,7 @@ name: bnuy
 description: Based on fedora atomic, powered by carrots.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-nokmods
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -20,7 +20,6 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/derisis13/ani-cli/repo/fedora-40/derisis13-ani-cli-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/whitehara/kernel-tkg/repo/fedora-%OS_VERSION%/whitehara-kernel-tkg-fedora-%OS_VERSION%.repo
        #- https://repo.nextdns.io/nextdns.repo
     install:
       # - micro
