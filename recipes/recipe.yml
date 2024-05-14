@@ -102,8 +102,8 @@ modules:
   - type: script
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
-    #scripts:
-    #     - fixfirefox.sh
+    scripts:
+         - kernel.sh
 
   - type: chezmoi
     install_chezmoi: true
