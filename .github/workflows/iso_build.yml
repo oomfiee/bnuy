@@ -1,41 +1,85 @@
+name: Build ISOs
+
 on:
   workflow_dispatch:
+  workflow_call:
 
-name: release-iso
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-iso
+  cancel-in-progress: true
+
 jobs:
-  release-iso:
-    name: Generate and Release ISOs
+  build-iso:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-    container:
-      image: fedora:40
-      options: --privileged
+      contents: read
+      packages: write
+      id-token: write
+    strategy:
+      fail-fast: false
+      matrix:
+        image_name:
+          - bnuy
+        major_version: [40]
     steps:
-      - uses: actions/checkout@v4
-      - name: Generate ISO
-        uses: ublue-os/isogenerator-old@v2.3.1
-        id: isogenerator
-        with:
-          image-name: ${{ github.event.repository.name }}
-          installer-repo: releases
-          installer-major-version: 40
-      - name: install github CLI
+
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@v1.3.1
+
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set Image Tag
+        id: generate-tag
+        shell: bash
         run: |
-          sudo dnf install 'dnf-command(config-manager)' -y
-          sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
-          sudo dnf install gh -y
-      - name: Upload ISO
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          if gh release list -R ${{ github.repository_owner }}/${{ github.event.repository.name }} | grep "auto-iso"; then
-            gh release view auto-iso -R ${{ github.repository_owner }}/${{ github.event.repository.name }} --json assets -q .assets[].name | xargs --no-run-if-empty -L 1 gh release delete-asset auto-iso -R ${{ github.repository_owner }}/${{ github.event.repository.name }}
-            gh release upload auto-iso ${{ steps.isogenerator.outputs.iso-path }} -R ${{ github.repository_owner }}/${{ github.event.repository.name }} --clobber
-          else
-            gh release create auto-iso ${{ steps.isogenerator.outputs.iso-path }} -t ISO -n "This is an automatically generated ISO release." -R ${{ github.repository_owner }}/${{ github.event.repository.name }}
+          TAG="latest"
+          if [[ "${{ github.ref_name }}" == "testing" ]]; then
+              TAG="testing"
           fi
-      - name: Upload SHA256SUM
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: gh release upload auto-iso ${{ steps.isogenerator.outputs.sha256sum-path }} -R ${{ github.repository_owner }}/${{ github.event.repository.name }} --clobber
+          # Would like to implement in the future. This will allow us to support image tags from a PR.
+          #if [[ github.event.number ]]; then
+          #  TAG="pr-${{ github.event.number }}-${{ matrix.major_version }}"
+          #fi
+          echo "tag=${TAG}" >> $GITHUB_OUTPUT
+      - name: Set EXTRA_BOOT_PARAMS
+        id: generate-extra-params
+        shell: bash
+        run: |
+          EXTRA_BOOT_PARAMS=""
+          if [[ "${{ matrix.image_name }}" =~ "deck" ]]; then
+              EXTRA_BOOT_PARAMS="inst.resolution=1280x800"
+          fi
+          echo "extra-boot-params=${EXTRA_BOOT_PARAMS}" >> $GITHUB_OUTPUT
+      - name: Build ISOs
+        uses: jasonn3/build-container-installer@v1.2.0
+        id: build
+        with:
+          arch: x86_64
+          image_name: ${{ matrix.image_name }}
+          image_repo: ghcr.io/oomfiee
+          variant: 'Kinoite'
+          version: ${{ matrix.major_version }}
+          image_tag: ${{ steps.generate-tag.outputs.tag }}
+          secure_boot_key_url: 'https://github.com/ublue-os/akmods/raw/main/certs/public_key.der'
+          enrollment_password: 'ublue-os'
+          iso_name: ${{ matrix.image_name }}-${{ steps.generate-tag.outputs.tag }}.iso
+          enable_cache_dnf: "false"
+          enable_cache_skopeo: "false"
+          flatpak_remote_refs_dir: ${{ steps.generate-flatpak-dir-shortname.outputs.flatpak-dir-shortname }}
+          enable_flatpak_dependencies: "false"
+          extra_boot_params: ${{ steps.generate-extra-params.outputs.extra-boot-params }}
+          #additional_templates: '/github/workspace/installer/lorax_templates/remove_root_password_prompt.tmpl'
+          flatpak_remote_name: "flathub-system"
+          flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
+      - name: Upload ISO as artifact
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.iso_name }}
+          path: |
+            ${{ steps.build.outputs.iso_path }}
+            ${{ steps.build.outputs.iso_path }}-CHECKSUM
+          if-no-files-found: error
+          retention-days: 0
+          compression-level: 0
