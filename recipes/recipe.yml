@@ -43,6 +43,7 @@ modules:
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
        - pipx
+       - mpv
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -77,7 +78,7 @@ modules:
          - org.wezfurlong.wezterm
          - org.keepassxc.KeePassXC
          - io.github.NhekoReborn.Nheko
-         - io.mpv.Mpv
+         #- io.mpv.Mpv
          - org.inkscape.Inkscape
          - com.valvesoftware.Steam
          - org.kde.gwenview
