@@ -64,6 +64,7 @@ modules:
        - adwaita-gtk2-theme
        #- adwaita-cursor-theme
        - noopenh264
+       - mpv
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
