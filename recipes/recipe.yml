@@ -41,6 +41,8 @@ modules:
       # - nextdns
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
+       - ani-cli
+       - python3-pip
 
     remove:
       # example: removing firefox (in favor of the flatpak)
