@@ -44,6 +44,7 @@ modules:
        - xdg-desktop-portal
        - nheko
        - generic-release
+       - generic-release-common
 
     remove:
       # example: removing firefox (in favor of the flatpak)
