@@ -109,8 +109,8 @@ modules:
   - type: script
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
-   # scripts:
-   #      - kernel.sh
+    scripts:
+         - branding.sh
 
   - type: chezmoi
     install_chezmoi: true
