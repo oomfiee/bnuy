@@ -6,4 +6,5 @@
 set -oue pipefail
 
 rpm-ostree cliwrap install-to-root /
-rpm-ostree override replace fedora-release-identity-kinoite fedora-release-common generic-release-common generic-release
+rpm-ostree override remove fedora-release-identity-kinoite fedora-release-common fedora-release /
+rpm-ostree install generic-release-common generic-release
