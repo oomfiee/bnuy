@@ -43,6 +43,8 @@ modules:
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
        - nheko
+       - generic-release
+       - generic-release-common
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -57,10 +59,10 @@ modules:
        - plymouth-system-theme
        - firewall-config
        #- Fedora-release-identity-kde
-       #- fedora-release
-       #- fedora-release-identity-kinoite
-       #- fedora-release-identity-basic
-       #- fedora-release-common
+       - fedora-release
+       - fedora-release-identity-kinoite
+       - fedora-release-identity-basic
+       - fedora-release-common
        - fedora-logos
        - adwaita-gtk2-theme
        - noopenh264
@@ -107,8 +109,8 @@ modules:
   - type: script
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
-    scripts:
-         - branding.sh
+   # scripts:
+   #      - kernel.sh
 
   - type: chezmoi
     install_chezmoi: true
