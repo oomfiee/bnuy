@@ -64,7 +64,7 @@ modules:
        #- adwaita-cursor-theme
        - noopenh264
        #- highcontrast-icon-theme
-       - adwaita-cursor-theme
+       #- adwaita-cursor-theme
        - adwaita-icon-theme
 
   - type: default-flatpaks
