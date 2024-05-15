@@ -57,8 +57,7 @@ modules:
        - plymouth-system-theme
        - firewall-config
        #- Fedora-release-identity-kde
-       #- fedora-release
-       - f40-backgrounds
+       - fedora-release
        - fedora-logos
        - adwaita-gtk2-theme
        - noopenh264
