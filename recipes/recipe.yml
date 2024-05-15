@@ -61,7 +61,7 @@ modules:
        #- Fedora-release-identity-kde
        - fedora-release
        - fedora-release-identity-kinoite
-       - fedora-release-identity-basic
+       #- fedora-release-identity-basic
        - fedora-release-common
        - fedora-logos
        - adwaita-gtk2-theme
