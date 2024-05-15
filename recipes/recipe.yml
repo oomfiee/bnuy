@@ -56,7 +56,7 @@ modules:
        - plymouth-plugin-two-step 
        - plymouth-system-theme
        - firewall-config
-       #- Fedora-release-identity-kde
+       - Fedora-release-identity-kde
        - fedora-release
        - fedora-logos
        - adwaita-gtk2-theme
