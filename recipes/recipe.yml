@@ -42,7 +42,7 @@ modules:
       # - nextdns
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
-       - nu
+       - nheko
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -81,7 +81,8 @@ modules:
          - org.inkscape.Inkscape
          - com.valvesoftware.Steam
          - org.kde.gwenview
-        # - org.gtk.Gtk3theme.Breeze
+         - io.freetubeapp.FreeTube
+         - org.gtk.Gtk3theme.Breeze
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
