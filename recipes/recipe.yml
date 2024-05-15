@@ -63,7 +63,6 @@ modules:
        - adwaita-gtk2-theme
        #- adwaita-cursor-theme
        - noopenh264
-       - gnome-themes-extra
        - highcontrast-icon-theme
        - adwaita-cursor-theme
 
