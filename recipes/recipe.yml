@@ -59,15 +59,11 @@ modules:
        #- Fedora-release-identity-kde
        #- fedora-release
        #- f40-backgrounds
-       #- fedora-logos
+       - fedora-logos
        - adwaita-gtk2-theme
-       #- adwaita-cursor-theme
        - noopenh264
        - highcontrast-icon-theme
-       - adwaita-cursor-theme
-       - adwaita-icon-theme
-       - gtk-4
-       - gtk-3
+
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
