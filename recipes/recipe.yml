@@ -58,7 +58,7 @@ modules:
        - firewall-config
        #- Fedora-release-identity-kde
        #- fedora-release
-       #- f40-backgrounds
+       - f40-backgrounds
        - fedora-logos
        - adwaita-gtk2-theme
        - noopenh264
