@@ -66,6 +66,8 @@ modules:
        - highcontrast-icon-theme
        - adwaita-cursor-theme
        - adwaita-icon-theme
+       - gtk-4
+       - gtk-3
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
