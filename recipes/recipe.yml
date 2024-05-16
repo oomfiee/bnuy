@@ -47,6 +47,7 @@ modules:
        - libcap-ng-devel
        - procps-ng-devel
        - uksmd
+       - nu
 
     remove:
       # example: removing firefox (in favor of the flatpak)
