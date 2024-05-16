@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><circle
+       style="fill:none;stroke:#a16b69;stroke-width:9.48507;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
+       cx="256"
+       cy="256"
+       r="167.1093" /><path
+       id="path64-9"
+       style="fill:#f1eee9;fill-opacity:1;stroke-width:35.9303"
+       d="M 256.11548,481.9141 C 253.29633,481.84781 250.70803,369.73069 195.20229,314.22498 139.69658,258.71924 31.273393,259.82494 31.157971,255.96686 31.042452,252.10875 139.23482,243.2869 194.74053,187.78116 250.24627,132.27542 253.06542,30.085849 255.8846,30.085849 c 2.81914,0 5.63832,102.189571 61.14406,157.695311 55.50571,55.50571 163.69802,64.32759 163.81344,68.25189 0.11552,3.9243 -107.84597,2.95105 -163.35171,58.45679 -55.50571,55.50571 -58.55574,167.49041 -61.37491,167.42426 z" /><path
+       id="path11"
+       style="fill:#f1eee9;fill-opacity:1;stroke-width:27.2045"
+       d="m 136.50211,133.61492 c 1.56304,-1.4545 62.23981,57.94525 121.6689,58.685 59.42909,0.73978 117.61053,-57.18049 119.71275,-55.15043 2.10233,2.03006 -51.87464,64.01049 -52.61439,123.43958 -0.73977,59.42912 51.75765,116.3069 50.22962,117.79733 -1.52798,1.49041 -57.08138,-52.4065 -116.51049,-53.14624 -59.42909,-0.73975 -122.73387,51.67764 -124.87113,49.61166 -2.13731,-2.06592 56.893,-58.6153 57.63275,-118.04442 0.73974,-59.42906 -56.811,-121.73791 -55.24801,-123.19248 z" /></g></svg>
