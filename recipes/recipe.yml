@@ -66,10 +66,6 @@ modules:
        - adwaita-gtk2-theme
        - noopenh264
        - highcontrast-icon-theme
-       - traceroute
-       - apr
-       - apr-util
-       - libapr
 
 
   - type: default-flatpaks
