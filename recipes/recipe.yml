@@ -20,6 +20,7 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/derisis13/ani-cli/repo/fedora-40/derisis13-ani-cli-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+       - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
        #- https://repo.nextdns.io/nextdns.repo
     install:
       # - micro
@@ -43,6 +44,9 @@ modules:
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
        - nheko
+       - libcap-ng-devel
+       - procps-ng-devel
+       - uksmd
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -108,8 +112,8 @@ modules:
   - type: script
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
-   # scripts:
-   #      - kernel.sh
+    scripts:
+         - kernel.sh
 
   - type: chezmoi
     install_chezmoi: true
@@ -129,6 +133,7 @@ modules:
     system:
       enabled:
         - syncthing@oomfie.service # Enabled (runs on system boot)
+        - uksmd.service
       disabled:
         - bluetooth.service
         - flatpak-system-update.timer
