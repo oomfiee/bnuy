@@ -57,7 +57,7 @@ modules:
        - plymouth-system-theme
        - firewall-config
        #- Fedora-release-identity-kde
-       - fedora-release
+       #- fedora-release
        - fedora-release-identity-kinoite
        #- fedora-release-identity-basic
        #- fedora-release-identity-kde
