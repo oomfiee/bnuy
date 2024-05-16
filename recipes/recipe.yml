@@ -69,6 +69,7 @@ modules:
        - traceroute
        - apr
        - apr-util
+       - libapr
 
 
   - type: default-flatpaks
