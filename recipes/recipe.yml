@@ -62,7 +62,7 @@ modules:
        #- fedora-release-identity-basic
        #- fedora-release-identity-kde
        #- fedora-release-common
-       - fedora-logos
+       #- fedora-logos
        - adwaita-gtk2-theme
        - noopenh264
        - highcontrast-icon-theme
