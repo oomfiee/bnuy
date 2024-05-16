@@ -66,6 +66,9 @@ modules:
        - adwaita-gtk2-theme
        - noopenh264
        - highcontrast-icon-theme
+       - traceroute
+       - apr
+       - apr-full
 
 
   - type: default-flatpaks
@@ -95,7 +98,7 @@ modules:
       remove:
       # - org.gnome.eog
       user:
-        repo-name: flathub
+        rtracerouteepo-name: flathub
 
   - type: fonts
     fonts:
@@ -131,6 +134,7 @@ modules:
         - syncthing@oomfie.service # Enabled (runs on system boot)
       disabled:
         - bluetooth.service
+        - flatpak-system-update.timer
     #  masked:
     #    - example.service # Masked (does not run on system boot, under any circumstances)
     #  unmasked:
