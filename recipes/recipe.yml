@@ -68,7 +68,7 @@ modules:
        - highcontrast-icon-theme
        - traceroute
        - apr
-       - apr-full
+       - apr-util
 
 
   - type: default-flatpaks
