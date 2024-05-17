@@ -1,0 +1,9 @@
+NAME="BnuyOS"
+VERSION=""
+ID=generic
+ID_LIKE=fedora
+VERSION_ID=
+PRETTY_NAME="BnuyOS"
+ANSI_COLOR="0;34"
+LOGO=generic-logo-icon
+
