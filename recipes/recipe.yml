@@ -66,6 +66,7 @@ modules:
        #- fedora-release
        - fedora-release-identity-kinoite
        - fedora-release-kinoite
+       - fedora-release-common
        #- fedora-release-identity-basic
        #- fedora-release-identity-kde
        #- fedora-release-common
