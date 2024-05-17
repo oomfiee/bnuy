@@ -48,6 +48,7 @@ modules:
        - procps-ng-devel
        - uksmd
        - nu
+       - generic-release
 
     remove:
       # example: removing firefox (in favor of the flatpak)
