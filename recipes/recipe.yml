@@ -42,7 +42,7 @@ modules:
       # - nextdns
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
-       - nheko
+      # - nheko
       # - libcap-ng-devel
       # - procps-ng-devel
       # - uksmd
@@ -88,7 +88,7 @@ modules:
          - xyz.armcord.ArmCord
          - org.wezfurlong.wezterm
          - org.keepassxc.KeePassXC
-         #- io.github.NhekoReborn.Nheko
+         - io.github.NhekoReborn.Nheko
          - io.mpv.Mpv
          - org.inkscape.Inkscape
          - com.valvesoftware.Steam
