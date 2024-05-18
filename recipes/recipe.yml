@@ -13,13 +13,12 @@ modules:
   - type: files
     files:
       - usr: /usr
-      #- etc: /etc
 
   - type: rpm-ostree
     repos:
        - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/derisis13/ani-cli/repo/fedora-40/derisis13-ani-cli-fedora-%OS_VERSION%.repo
-       #- https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+       - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
        - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
        #- https://repo.nextdns.io/nextdns.repo
     install:
@@ -33,7 +32,7 @@ modules:
       # - toolbx
       # - ibm-plex-sans-fonts
        - syncthing
-       #- trackma-qt
+       - trackma-qt
        - wl-clipboard
        - mozilla-openh264
        - gstreamer1-plugin-openh264
@@ -46,7 +45,7 @@ modules:
        - nheko
        - libcap-ng-devel
        - procps-ng-devel
-       - uksmd
+      # - uksmd
        - nu
        - generic-release
        - generic-release-common
@@ -118,7 +117,7 @@ modules:
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
     scripts:
-         - kernel.sh
+  #       - kernel.sh
 
   - type: chezmoi
     install_chezmoi: true
