@@ -74,6 +74,12 @@ modules:
        - adwaita-gtk2-theme
        - noopenh264
        - highcontrast-icon-theme
+       - maliit-keyboard
+       - vim
+       - tmux
+       - nvtop
+       - openrgb-udev-rules
+       - solaar-udev
 
 
   - type: default-flatpaks
