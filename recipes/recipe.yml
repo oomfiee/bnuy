@@ -137,7 +137,6 @@ modules:
     system:
       enabled:
         - syncthing@oomfie.service # Enabled (runs on system boot)
-        - uksmd.service
       disabled:
         - bluetooth.service
         - flatpak-system-update.timer
