@@ -23,7 +23,7 @@ modules:
        #- https://repo.nextdns.io/nextdns.repo
     install:
       # - micro
-       - starship
+      # - starship
        - fish
       # - kate
       # - fonts
