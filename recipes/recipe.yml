@@ -38,13 +38,13 @@ modules:
        - gstreamer1-plugin-openh264
        - mesa-va-drivers-freeworld
        - ffmpeg
-       - jetbrains-mono-fonts
+      # - jetbrains-mono-fonts
       # - nextdns
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
        - nheko
-       - libcap-ng-devel
-       - procps-ng-devel
+      # - libcap-ng-devel
+      # - procps-ng-devel
       # - uksmd
        - nu
        - generic-release
@@ -107,6 +107,8 @@ modules:
 
   - type: fonts
     fonts:
+      nerd-fonts:
+         - FiraCode
       google-fonts:
          - Noto Color Emoji
          - IBM Plex Sans
