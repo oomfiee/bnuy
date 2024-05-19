@@ -49,6 +49,8 @@ modules:
        - nu
        - generic-release
        - generic-release-common
+       - ufw
+       - plasma-firewall
 
     remove:
       # example: removing firefox (in favor of the flatpak)
