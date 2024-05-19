@@ -49,8 +49,8 @@ modules:
        - nu
        - generic-release
        - generic-release-common
-       - ufw
        - plasma-firewall
+       - plasma-firewall-firewalld
 
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -82,7 +82,6 @@ modules:
        - nvtop
        - openrgb-udev-rules
        - solaar-udev
-       - firewalld
 
 
   - type: default-flatpaks
