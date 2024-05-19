@@ -75,7 +75,7 @@ modules:
        - noopenh264
        - highcontrast-icon-theme
        #- maliit-keyboard
-       #- vim
+       - vim-minimal
        - tmux
        - nvtop
 
