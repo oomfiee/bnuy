@@ -102,6 +102,9 @@ modules:
          - com.github.tchx84.Flatseal
          - org.kde.gwenview
          - org.keepassxc.KeePassXC
+         - org.kde.okular
+         - org.onlyoffice.desktopeditors
+         - org.torproject.torbrowser-launcher
       remove:
       # - org.gnome.eog
       user:
