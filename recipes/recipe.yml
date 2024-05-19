@@ -78,8 +78,6 @@ modules:
        - vim
        - tmux
        - nvtop
-       - openrgb-udev-rules
-       - solaar-udev
 
 
   - type: default-flatpaks
