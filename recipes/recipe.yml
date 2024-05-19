@@ -156,16 +156,16 @@ modules:
 
   - type: yafti
     Core:
-       - Firefox: org.mozilla.firefox
-       - Armcord: xyz.armcord.ArmCord
-       #- Wezterm: org.wezfurlong.wezterm
-       - KeepassXC: org.keepassxc.KeePassXC
-       #- io.github.NhekoReborn.Nheko
-       - MPV: io.mpv.Mpv
-       - Inkscape: org.inkscape.Inkscape
-       - Steam: com.valvesoftware.Steam
-       - Gwenview(KDE image viewer): org.kde.gwenview
-       - Freetube: io.freetubeapp.FreeTube
+      - Firefox: org.mozilla.firefox
+      - Armcord: xyz.armcord.ArmCord
+      #- Wezterm: org.wezfurlong.wezterm
+      - KeepassXC: org.keepassxc.KeePassXC
+      #- io.github.NhekoReborn.Nheko
+      - MPV: io.mpv.Mpv
+      - Inkscape: org.inkscape.Inkscape
+      - Steam: com.valvesoftware.Steam
+      - Gwenview(KDE image viewer): org.kde.gwenview
+      - Freetube: io.freetubeapp.FreeTube
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
