@@ -42,7 +42,7 @@ modules:
       # - nextdns
        - xdg-desktop-portal-kde
        - xdg-desktop-portal
-       - nheko
+      # - nheko
       # - libcap-ng-devel
       # - procps-ng-devel
       # - uksmd
