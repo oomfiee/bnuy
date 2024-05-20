@@ -95,7 +95,7 @@ modules:
       install:
          - org.gtk.Gtk3theme.Breeze
          - org.mozilla.firefox
-         - io.gitlab.librewolf-community
+         #- io.gitlab.librewolf-community
          - com.valvesoftware.Steam
          - xyz.armcord.ArmCord
          - io.github.NhekoReborn.Nheko
