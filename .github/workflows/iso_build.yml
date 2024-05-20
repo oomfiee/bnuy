@@ -42,6 +42,7 @@ jobs:
           #  TAG="pr-${{ github.event.number }}-${{ matrix.major_version }}"
           #fi
           echo "tag=${TAG}" >> $GITHUB_OUTPUT
+     
       - name: Set EXTRA_BOOT_PARAMS
         id: generate-extra-params
         shell: bash
@@ -51,6 +52,7 @@ jobs:
               EXTRA_BOOT_PARAMS="inst.resolution=1280x800"
           fi
           echo "extra-boot-params=${EXTRA_BOOT_PARAMS}" >> $GITHUB_OUTPUT
+      
       - name: Build ISOs
         uses: jasonn3/build-container-installer@v1.2.0
         id: build
@@ -72,14 +74,21 @@ jobs:
           #additional_templates: '/github/workspace/installer/lorax_templates/remove_root_password_prompt.tmpl'
           flatpak_remote_name: "flathub-system"
           flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
-      - name: Upload ISO as artifact
-        id: upload
-        uses: actions/upload-artifact@v4
+      
+      - name: Move ISO to Upload Directory
+        id: upload-directory
+        shell: bash
+        run: |
+          ISO_UPLOAD_DIR=${{ github.workspace }}/upload
+          mkdir ${ISO_UPLOAD_DIR}
+          mv ${{ steps.build.outputs.iso_path }}/${{ steps.build.outputs.iso_name }} ${ISO_UPLOAD_DIR}
+          mv ${{ steps.build.outputs.iso_path }}/${{ steps.build.outputs.iso_name }}-CHECKSUM ${ISO_UPLOAD_DIR}
+          echo "iso-upload-dir=${ISO_UPLOAD_DIR}" >> $GITHUB_OUTPUT     
+
+      - name: Upload ISO to archive.org
+        uses: qoijjj/internet-archive-upload@v7
         with:
-          name: ${{ steps.build.outputs.iso_name }}
-          path: |
-            ${{ steps.build.outputs.iso_path }}
-            ${{ steps.build.outputs.iso_path }}-CHECKSUM
-          if-no-files-found: error
-          retention-days: 0
-          compression-level: 0
+          access-key: ${{ secrets.IA_ACCESS_KEY }}
+          secret-key: ${{ secrets.IA_SECRET_KEY }}
+          identifier: ${{ matrix.image_name }}_${{ env.TIMESTAMP }}
+          files: ${{ steps.upload-directory.outputs.iso-upload-dir }}
