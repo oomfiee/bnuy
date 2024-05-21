@@ -79,7 +79,6 @@ jobs:
           flatpak_remote_url: "https://flathub.org/repo/flathub.flatpakrepo"
 
       - name: Move ISO to Upload Directory
-        uses: actions/upload-artifact@v4
         id: upload-directory
         shell: bash
         run: |
@@ -88,15 +87,11 @@ jobs:
           mv ${{ steps.build.outputs.iso_path }}/${{ steps.build.outputs.iso_name }} ${ISO_UPLOAD_DIR}
           mv ${{ steps.build.outputs.iso_path }}/${{ steps.build.outputs.iso_name }}-CHECKSUM ${ISO_UPLOAD_DIR}
           echo "iso-upload-dir=${ISO_UPLOAD_DIR}" >> $GITHUB_OUTPUT     
-      
+
       - name: Upload ISO to archive.org
         uses: qoijjj/internet-archive-upload@v7
         with:
-          name: ${{ steps.build.outputs.iso_name }}
           access-key: ${{ secrets.IA_ACCESS_KEY }}
-          path: |
           secret-key: ${{ secrets.IA_SECRET_KEY }}
-            ${{ steps.build.outputs.iso_path }}
           identifier: ${{ matrix.image_name }}_${{ env.TIMESTAMP }}
-            ${{ steps.build.outputs.iso_path }}-CHECKSUM
           files: ${{ steps.upload-directory.outputs.iso-upload-dir }}
