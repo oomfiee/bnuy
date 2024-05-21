@@ -127,7 +127,7 @@ modules:
     snippets:
          - "flatpak override --user --filesystem=xdg-config/gtk-3.0:ro"
     scripts:
-  #       - kernel.sh
+         - kernel.sh
 
   - type: chezmoi
     install_chezmoi: true
