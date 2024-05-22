@@ -160,13 +160,13 @@ modules:
     #  unmasked:
     #    - example.service # Unmasked (runs for the user, even if previously masked)
 
-  - type: akmods
-    base: fsync # if not specified, classic "main" base is used by default
-    install:
+  #- type: akmods
+  #  base: fsync # if not specified, classic "main" base is used by default
+  #  install:
   #    - openrazer
   #    - openrgb
   #    - winesync
-      - nvidia
+  #    - nvidia
   #    - ryzen-smu
   #    - zenergy
 
