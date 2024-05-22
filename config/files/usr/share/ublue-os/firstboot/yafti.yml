@@ -19,10 +19,9 @@ screens:
       actions:
         - run: flatpak remote-delete --system --force fedora
         - run: flatpak remote-delete --user --force fedora
-        - run: flatpak remote-delete --system --force flathub
-        - run: flatpak remote-delete --user --force flathub
         - run: flatpak remove --system --noninteractive --all
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+        - run: flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/flathub.flatpakrepo
         - run: flatpak override --system --filesystem=xdg-config/gtk-3.0:ro
 
   applications:
