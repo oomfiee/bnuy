@@ -1,4 +1,4 @@
-name: bnuy-cosmic
+name: bnuy-cosmic-nvidia
 # description will be included in the image's metadata
 description: Based on fedora atomic, powered by carrots.
 
