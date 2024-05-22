@@ -41,6 +41,7 @@ screens:
           packages:
             - Firefox: org.mozilla.firefox
             - Tor Browser: org.torproject.torbrowser-launcher
+            - Librewolf: io.gitlab.librewolf-community
 
         Games:
           description: Games applications.
