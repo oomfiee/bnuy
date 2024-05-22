@@ -27,5 +27,3 @@
       # - procps-ng-devel
       # - uksmd
        - nu
-       - generic-release
-       - generic-release-common

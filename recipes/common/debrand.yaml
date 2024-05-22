@@ -1,4 +1,7 @@
     type: rpm-ostree
+    install:
+       - generic-release
+       - generic-release-common
     remove:
        #- Fedora-release-identity-kde
        #- fedora-release
