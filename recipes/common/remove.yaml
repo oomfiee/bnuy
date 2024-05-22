@@ -21,7 +21,6 @@
        #- fedora-release-common
        #- fedora-logos
        - adwaita-gtk2-theme
-       - noopenh264
        - highcontrast-icon-theme
        #- maliit-keyboard
        - vim-minimal
