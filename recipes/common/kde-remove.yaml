@@ -20,6 +20,8 @@
        #- fedora-release-identity-kde
        #- fedora-release-common
        #- fedora-logos
+       - adwaita-gtk2-theme
+       - highcontrast-icon-theme
        #- maliit-keyboard
        - vim-minimal
        - tmux
