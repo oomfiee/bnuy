@@ -1,28 +1,4 @@
     type: rpm-ostree
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-       - firefox
-       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-       - plymouth
-       - plymouth-scripts
-       - plymouth-plugin-label
-       - plymouth-theme-spinner
-       - plymouth-plugin-two-step
-       - plymouth-system-theme
-       - firewall-config
-       #- Fedora-release-identity-kde
-       #- fedora-release
-       - fedora-release-identity-kinoite
-       - fedora-release-kinoite
-       - fedora-release-common
-       #- fedora-release-identity-basic
-       #- fedora-release-identity-kde
-       #- fedora-release-common
-       #- fedora-logos
        - adwaita-gtk2-theme
        - highcontrast-icon-theme
-       #- maliit-keyboard
-       - vim-minimal
-       - tmux
-       - nvtop
