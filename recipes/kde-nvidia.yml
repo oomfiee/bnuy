@@ -11,9 +11,9 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - from-file: common/chezmoi.yaml
   - from-file: common/fonts.yaml
+  - from-file: common/remove.yaml
   - from-file: common/kinote-packages.yaml
   - from-file: common/packages.yaml
-  - from-file: common/remove.yaml
   - from-file: common/scripts.yaml
   - from-file: common/systemd-services.yaml
 
