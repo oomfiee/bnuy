@@ -1,0 +1,10 @@
+    type: fonts
+    fonts:
+      nerd-fonts:
+         - FiraCode
+         - jetbrainsmono
+      google-fonts:
+         - Noto Color Emoji
+         - IBM Plex Sans
+         - IBM Plex Serif
+         - Manrope

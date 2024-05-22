@@ -1,0 +1,6 @@
+    type: rpm-ostree
+    install:
+       - xdg-desktop-portal-kde
+       - xdg-desktop-portal
+       - plasma-firewall
+       - plasma-firewall-firewalld

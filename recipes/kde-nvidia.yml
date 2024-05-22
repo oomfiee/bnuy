@@ -1,0 +1,21 @@
+name: bnuy-nvidia
+# description will be included in the image's metadata
+description: Based on fedora atomic, powered by carrots.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/kinoite-nvidia
+image-version: latest # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: common/chezmoi.yaml
+  - from-file: common/fonts.yaml
+  - from-file: common/kinote-packages.yaml
+  - from-file: common/packages.yaml
+  - from-file: common/remove.yaml
+  - from-file: common/scripts.yaml
+  - from-file: common/systemd-services.yaml
+
+  - type: yafti
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
