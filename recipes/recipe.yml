@@ -80,10 +80,6 @@ modules:
        - vim-minimal
        - tmux
        - nvtop
-       - openrgb-udev-rules
-       - solaar-udev
-       - krfb
-       - krfb-libs
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -146,7 +142,7 @@ modules:
   - type: systemd
     system:
       enabled:
-        - syncthing@oomfie.service # Enabled (runs on system boot)
+    #    - syncthing@oomfie.service # Enabled (runs on system boot)
       disabled:
         - bluetooth.service
         - flatpak-system-update.timer
@@ -164,5 +160,16 @@ modules:
     #  unmasked:
     #    - example.service # Unmasked (runs for the user, even if previously masked)
 
+  - type: akmods
+    base: fsync # if not specified, classic "main" base is used by default
+    install:
+  #    - openrazer
+  #    - openrgb
+  #    - winesync
+      - nvidia
+  #    - ryzen-smu
+  #    - zenergy
+
+  - type: yafti
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
