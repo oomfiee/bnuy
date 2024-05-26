@@ -6,3 +6,4 @@
     wait_after_boot: '5m'
     disable_init: false
     disable_update: false
+    changed-file-policy: "skip"
