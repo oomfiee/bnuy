@@ -20,9 +20,9 @@ jobs:
       matrix:
         image_name:
           - bnuy
-          - bnuy-nvidia
-          - bnuy-cosmic-nvidia
-          - bnuy-cosmic
+        #  - bnuy-nvidia
+        #  - bnuy-cosmic-nvidia
+        #  - bnuy-cosmic
         major_version: [40]
     steps:
 
