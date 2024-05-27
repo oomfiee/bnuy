@@ -12,3 +12,4 @@
        - plymouth-system-theme
        - firewall-config
        #- maliit-keyboard
+       - ffmpeg-free
