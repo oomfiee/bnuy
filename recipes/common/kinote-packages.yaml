@@ -4,3 +4,11 @@
        - xdg-desktop-portal
        - plasma-firewall
        - plasma-firewall-firewalld
+       - icoutils
+       - kate
+       - kcron
+       - kio-admin
+       - ksshaskpass
+       - xwaylandvideobridge
+       - ffmpegthumbnailer
+       - default-fonts-cjk-sans

@@ -21,3 +21,4 @@
        - libpostproc-free
        - libswresample-free
        - libswscale-free
+       - plasma-discover-rpm-ostree
