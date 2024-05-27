@@ -27,6 +27,5 @@
       # - procps-ng-devel
       # - uksmd
        - nu
-       - android-udev-rules
        - android-tools
 

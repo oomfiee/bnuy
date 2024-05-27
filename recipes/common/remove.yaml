@@ -12,9 +12,13 @@
        - plymouth-system-theme
        - firewall-config
        #- maliit-keyboard
-       - vim-minimal
-       - tmux
-       - nvtop
-       - alsa-firmware
-       - apr
-       - apr-util
+       - ffmpeg-free
+       - libavcodec-free
+       - libavformat-free
+       - libavdevice-free
+       - libavfilter-free
+       - libavutil-free
+       - libpostproc-free
+       - libswresample-free
+       - libswscale-free
+       - plasma-discover-rpm-ostree
