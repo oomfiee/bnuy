@@ -5,6 +5,8 @@
        - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/dyskette-trackma-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
        #- https://repo.nextdns.io/nextdns.repo
+       - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+       - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     install:
       # - micro
        - starship
