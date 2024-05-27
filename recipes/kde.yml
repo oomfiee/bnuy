@@ -14,11 +14,11 @@ modules:
   - from-file: common/chezmoi.yaml
   - from-file: common/fonts.yaml
   - from-file: common/debrand.yaml
+  - from-file: common/scripts.yaml
   - from-file: common/kde-remove.yaml
   - from-file: common/remove.yaml
   - from-file: common/kinote-packages.yaml
   - from-file: common/packages.yaml
-  - from-file: common/scripts.yaml
   - from-file: common/systemd-services.yaml
 
   - type: yafti
