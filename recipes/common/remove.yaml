@@ -13,3 +13,4 @@
        - firewall-config
        #- maliit-keyboard
        - ffmpeg-free
+       - libavcodec-free
