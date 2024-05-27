@@ -14,3 +14,4 @@
        #- maliit-keyboard
        - ffmpeg-free
        - libavcodec-free
+       - libavformat-free
