@@ -12,6 +12,3 @@
        - plymouth-system-theme
        - firewall-config
        #- maliit-keyboard
-       - vim-minimal
-       - tmux
-       - nvtop
