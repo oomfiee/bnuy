@@ -4,7 +4,6 @@
     #    - syncthing@oomfie.service # Enabled (runs on system boot)
       disabled:
         - bluetooth.service
-        - flatpak-system-update.timer
     #  masked:
     #    - example.service # Masked (does not run on system boot, under any circumstances)
     #  unmasked:
