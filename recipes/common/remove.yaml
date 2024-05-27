@@ -15,3 +15,5 @@
        - ffmpeg-free
        - libavcodec-free
        - libavformat-free
+       - libavdevice-free
+       - libavfilter-free
