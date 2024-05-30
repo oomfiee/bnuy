@@ -37,10 +37,11 @@
        - pam_yubico
        - pamu2fcfg
        - pipewire-codec-aptx
-       - powerstat
        - smartmontools
        - solaar-udev
        - symlinks
        - tcpdump
        - traceroute
        - wireguard-tools
+       - apr-util-lmdb
+       - ocfs2-tools
