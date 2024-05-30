@@ -13,3 +13,10 @@
        - firewall-config
        #- maliit-keyboard
        - plasma-discover-rpm-ostree
+       - apr
+       - apr-utils
+       - tmux
+       - vim-minimal
+       - google-noto-sans-balinese-fonts
+       - google-noto-sans-javanese-fonts
+       - google-noto-sans-sundanese-fonts
