@@ -12,7 +12,6 @@
        - plymouth-system-theme
        - firewall-config
        #- maliit-keyboard
-       - plasma-discover-rpm-ostree
        - apr
        - apr-util
        - tmux
