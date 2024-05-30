@@ -70,6 +70,7 @@ screens:
             - Gwenview (KDE image viewer): org.kde.gwenview
             - KeepassXC: org.keepassxc.KeePassXC
             - BreezeGTK: org.gtk.Gtk3theme.Breeze
+            - ProtonVPN: com.protonvpn.www
 
         Office:
           description: Office applications.
