@@ -19,7 +19,6 @@ modules:
   #- from-file: common/codec-remove.yml
   - from-file: common/kde-remove.yml
   - from-file: common/remove.yml
-  - from-file: common/kinote-packages.yml
   - from-file: common/packages.yml
   - from-file: common/systemd-services.yml
 
