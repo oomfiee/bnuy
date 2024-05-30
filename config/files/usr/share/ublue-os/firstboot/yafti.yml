@@ -47,6 +47,7 @@ screens:
           default: false
           packages:
             - Steam: com.valvesoftware.Steam
+            - PortProton: ru.linux_gaming.PortProton
 
         Social:
           description: Social applications
@@ -54,6 +55,10 @@ screens:
           packages:
             - Armcord: xyz.armcord.ArmCord
             - Nheko: io.github.NhekoReborn.Nheko
+            - SchildiChat: chat.schildi.desktop
+            - PlasmaTube: org.kde.plasmatube
+            - Heroic: com.heroicgameslauncher.hgl
+            - Vinegar: org.vinegarhq.Vinegar
 
         Media:
           description: Social applications
@@ -61,6 +66,7 @@ screens:
           packages:
             - MPV: io.mpv.Mpv
             - Freetube: io.freetubeapp.FreeTube
+            - Elisa: org.kde.elisa
 
         System Apps:
           description: System applications for all desktop environments.
