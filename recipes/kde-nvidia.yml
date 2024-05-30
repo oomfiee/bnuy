@@ -9,17 +9,18 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: common/files.yaml
-  - from-file: common/chezmoi.yaml
-  - from-file: common/fonts.yaml
-  - from-file: common/debrand.yaml
-  - from-file: common/kde-remove.yaml
-  - from-file: common/remove.yaml
-  - from-file: common/kinote-packages.yaml
-  - from-file: common/packages.yaml
-  - from-file: common/scripts.yaml
-  - from-file: common/systemd-services.yaml
-  - from-file: common/akmods-nvidia.yaml
+  - from-file: common/shells.yml
+  - from-file: common/files.yml
+  - from-file: common/chezmoi.yml
+  - from-file: common/fonts.yml
+  - from-file: common/debrand.yml
+  - from-file: common/kde-remove.yml
+  - from-file: common/remove.yml
+  - from-file: common/kinote-packages.yml
+  - from-file: common/packages.yml
+  - from-file: common/scripts.yml
+  - from-file: common/systemd-services.yml
+  - from-file: common/akmods-nvidia.yml
 
   - type: yafti
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -7,8 +7,6 @@
        #- https://repo.nextdns.io/nextdns.repo
     install:
       # - micro
-       - starship
-       - fish
       # - kate
       # - fonts
        - git
@@ -26,6 +24,5 @@
       # - libcap-ng-devel
       # - procps-ng-devel
       # - uksmd
-       - nu
        - android-tools
 
