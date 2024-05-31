@@ -11,39 +11,39 @@
        - plymouth-plugin-two-step
        - plymouth-system-theme
        - firewall-config
-       #- maliit-keyboard
-       - apr
-       - apr-util
-       - tmux
-       - vim-minimal
-       - google-noto-sans-balinese-fonts
-       - google-noto-sans-javanese-fonts
-       - google-noto-sans-sundanese-fonts
-       - fzf
-       - heif-pixbuf-loader
-       - htop
-       - kernel-tools
-       - libheif-freeworld
-       - libheif-tools
-       - libratbag-ratbagd
-       - lshw
-       - net-tools
-       - nvme-cli
-       - nvtop
-       - openrgb-udev-rules
-       - openssl
-       - oversteer-udev
-       - pam-u2f
-       - pam_yubico
-       - pamu2fcfg
-       - pipewire-codec-aptx
-       - smartmontools
-       - solaar-udev
-       - symlinks
-       - tcpdump
-       - traceroute
-       - wireguard-tools
-       - apr-util-lmdb
-       - ocfs2-tools
-       - apr-util-openssl
+       - maliit-keyboard
+       # - apr
+       # - apr-util
+       # - tmux
+       # - vim-minimal
+       # - google-noto-sans-balinese-fonts
+       # - google-noto-sans-javanese-fonts
+       # - google-noto-sans-sundanese-fonts
+       # - fzf
+       # - heif-pixbuf-loader
+       # - htop
+       # - kernel-tools
+       # - libheif-freeworld
+       # - libheif-tools
+       # - libratbag-ratbagd
+       # - lshw
+       # - net-tools
+       # - nvme-cli
+       # - nvtop
+       # - openrgb-udev-rules
+       # - openssl
+       # - oversteer-udev
+       # - pam-u2f
+       # - pam_yubico
+       # - pamu2fcfg
+       # - pipewire-codec-aptx
+       # - smartmontools
+       # - solaar-udev
+       # - symlinks
+       # - tcpdump
+       # - traceroute
+       # - wireguard-tools
+       # - apr-util-lmdb
+       # - ocfs2-tools
+       # - apr-util-openssl
        - firewalld
