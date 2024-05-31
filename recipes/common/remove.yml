@@ -11,7 +11,7 @@
        - plymouth-plugin-two-step
        - plymouth-system-theme
        - firewall-config
-       - maliit-keyboard
+       #- maliit-keyboard
        # - apr
        # - apr-util
        # - tmux
