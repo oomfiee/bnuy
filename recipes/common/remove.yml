@@ -47,3 +47,4 @@
        - ocfs2-tools
        - apr-util-openssl
        - firewalld
+       - xdg-desktop-portal-gnome
