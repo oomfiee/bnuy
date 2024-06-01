@@ -6,6 +6,5 @@
         - "curl -Lo /etc/yum.repos.d/negativo17-fedora-multimedia.repo https://negativo17.org/repos/fedora-multimedia.repo"
         #- "curl -Lo /etc/yum.repos.d/_copr_ublue-os-akmods.repo https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/fedora-%OS_VERSION%/ublue-os-akmods-fedora-%OS_VERSION%.repo"
         - "wget --directory-prefix=/etc/pki/akmods/certs/public_key.der https://github.com/ublue-os/akmods/raw/main/certs/public_key.der"
-        - "wget --directory-prefix=/etc/pki/akmods/certs/private_key.der https://github.com/ublue-os/akmods/raw/main/certs/private_key.der"
     scripts:
         # - kernel.sh
