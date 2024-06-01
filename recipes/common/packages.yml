@@ -4,7 +4,6 @@
        - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/dyskette-trackma-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
        #- https://repo.nextdns.io/nextdns.repo
-       - https://negativo17.org/repos/fedora-multimedia.repo
     install:
       # - micro
       # - kate
