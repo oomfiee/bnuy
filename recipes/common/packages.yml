@@ -24,4 +24,5 @@
       # - procps-ng-devel
       # - uksmd
        - android-tools
+       - intel-media-driver
 
