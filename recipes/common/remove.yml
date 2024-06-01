@@ -46,4 +46,3 @@
        # - apr-util-lmdb
        # - ocfs2-tools
        # - apr-util-openssl
-       - firewalld
