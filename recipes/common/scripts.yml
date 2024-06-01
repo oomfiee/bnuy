@@ -6,5 +6,7 @@
         - "curl -Lo /etc/yum.repos.d/negativo17-fedora-multimedia.repo https://negativo17.org/repos/fedora-multimedia.repo"
         - "curl -Lo /etc/yum.repos.d/_copr_ublue-os-akmods.repo https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/fedora-40/ublue-os-akmods-fedora-40.repo"
         - "wget --directory-prefix=/etc/pki/akmods/certs/public_key.der https://github.com/ublue-os/akmods/raw/main/certs/public_key.der"
+        - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+        /etc/yum.repos.d/rpmfusion-nonfree-steam.repo"
     scripts:
         # - kernel.sh
