@@ -4,5 +4,6 @@
            https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
            https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
         - "curl -Lo /etc/yum.repos.d/negativo17-fedora-multimedia.repo https://negativo17.org/repos/fedora-multimedia.repo"
+        - "curl -Lo /etc/yum.repos.d/_copr_ublue-os-akmods.repo https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/fedora-%OS_VERSION%/ublue-os-akmods-fedora-%OS_VERSION%.repo"
     scripts:
         # - kernel.sh
