@@ -26,5 +26,5 @@
       # - uksmd
        - android-tools
        - intel-media-driver
-       - kernel-modules-core-uname-r
+       - kernel-uki-virt
 
