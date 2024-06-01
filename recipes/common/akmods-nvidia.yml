@@ -1,4 +1,8 @@
-type: akmods
-nvidia: true
-install:
-  - nvidia
+    type: rpm-ostree
+    repos:
+       - https://negativo17.org/repos/fedora-nvidia.repo
+    install:
+       - nvidia-driver
+       - akmod-nvidia
+       - nvidia-kmod-common
+       - nvidia-settings
