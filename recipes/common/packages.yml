@@ -32,4 +32,7 @@
        - kernel-modules-core
        - kernel-modules-extra
        - strace
+       - btop
+       - wget
+       - curl
 
