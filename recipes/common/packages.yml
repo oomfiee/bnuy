@@ -35,4 +35,5 @@
        - btop
        - wget
        - curl
+       - distrobox
 
