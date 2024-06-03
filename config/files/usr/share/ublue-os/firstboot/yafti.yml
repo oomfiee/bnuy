@@ -59,13 +59,14 @@ screens:
             - SchildiChat: chat.schildi.desktop
 
         Media:
-          description: Social applications
+          description: Media applications
           default: false
           packages:
             - MPV: io.mpv.Mpv
             - Freetube: io.freetubeapp.FreeTube
             - Elisa: org.kde.elisa
             - PlasmaTube: org.kde.plasmatube
+            - Inkscape: org.inkscape.Inkscape
 
         System Apps:
           description: System applications for all desktop environments.
