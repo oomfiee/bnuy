@@ -39,6 +39,7 @@
        - unar
        - tealdeer
        - imagemagick
+       - cowsay
        #- rsync-gui
        #- rsync
 

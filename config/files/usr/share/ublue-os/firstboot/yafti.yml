@@ -69,17 +69,14 @@ screens:
             - PlasmaTube: org.kde.plasmatube
             - Inkscape: org.inkscape.Inkscape
             - Curtail (Made For GNOME): com.github.huluti.Curtail
+            - Gwenview (KDE image viewer): org.kde.gwenview
 
         System Apps:
           description: System applications for all desktop environments.
           default: true
           packages:
             - Flatseal (Permission Manager): com.github.tchx84.Flatseal
-            - Gwenview (KDE image viewer): org.kde.gwenview
-            - KeepassXC: org.keepassxc.KeePassXC
             - BreezeGTK: org.gtk.Gtk3theme.Breeze
-            - ProtonVPN: com.protonvpn.www
-            - LocalSend (Airdrop like application): org.localsend.localsend_app
 
         Office:
           description: Office applications.
@@ -87,6 +84,17 @@ screens:
           packages:
             - OnlyOffice: org.onlyoffice.desktopeditors
             - Okular (KDE PDF reader): org.kde.okular
+            - libreOffice: org.libreoffice.LibreOffice
+
+        utilities:
+          description: utilities applications.
+          default: true
+          packages:
+            - KeepassXC: org.keepassxc.KeePassXC
+            - ProtonVPN: com.protonvpn.www
+            - LocalSend (Airdrop like application): org.localsend.localsend_app
+            - Warp (Designed for GNOME): app.drey.Warp
+            - Bitwarden: com.bitwarden.desktop
 
   final-screen:
     source: yafti.screen.title
