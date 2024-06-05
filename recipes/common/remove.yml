@@ -47,6 +47,3 @@
        # - ocfs2-tools
        # - apr-util-openssl
        - toolbox
-       - vlc-libs
-       - vlc-plugin-gstreamer
-       - vlc-plugins-base
