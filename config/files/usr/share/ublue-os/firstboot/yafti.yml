@@ -57,6 +57,7 @@ screens:
             - Armcord: xyz.armcord.ArmCord
             - Nheko: io.github.NhekoReborn.Nheko
             - SchildiChat: chat.schildi.desktop
+            - Vesktop (discord client): dev.vencord.Vesktop
 
         Media:
           description: Media applications
@@ -67,6 +68,7 @@ screens:
             - Elisa: org.kde.elisa
             - PlasmaTube: org.kde.plasmatube
             - Inkscape: org.inkscape.Inkscape
+            - Curtail (Made For GNOME): com.github.huluti.Curtail
 
         System Apps:
           description: System applications for all desktop environments.
@@ -77,6 +79,7 @@ screens:
             - KeepassXC: org.keepassxc.KeePassXC
             - BreezeGTK: org.gtk.Gtk3theme.Breeze
             - ProtonVPN: com.protonvpn.www
+            - LocalSend (Airdrop like application): org.localsend.localsend_app
 
         Office:
           description: Office applications.

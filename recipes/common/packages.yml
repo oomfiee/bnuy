@@ -36,4 +36,9 @@
        - wget
        - curl
        - distrobox
+       - unar
+       - tealdeer
+       - imagemagick
+       #- rsync-gui
+       #- rsync
 
