@@ -42,4 +42,6 @@
        - cowsay
        #- rsync-gui
        #- rsync
+       - steam-devices
+       - steam
 
