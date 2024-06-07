@@ -44,4 +44,5 @@
        #- rsync
        - steam-devices
        #- steam
+       - gamescope
 
