@@ -16,7 +16,7 @@
        - syncthing
        - trackma+qt
        - wl-clipboard
-       - mesa-va-drivers-freeworld
+       - mesa-va-drivers #-freeworld
        - ffmpeg
       # - jetbrains-mono-fonts
       # - nextdns
