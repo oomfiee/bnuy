@@ -6,5 +6,3 @@
        - akmod-nvidia
        - nvidia-kmod-common
        - nvidia-settings
-       - xorg-x11-drv-nvidia-cuda
-       - xorg-x11-drv-nvidia
