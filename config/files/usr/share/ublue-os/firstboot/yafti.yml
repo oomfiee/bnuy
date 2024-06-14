@@ -49,6 +49,8 @@ screens:
             - PortProton: ru.linux_gaming.PortProton
             - Heroic: com.heroicgameslauncher.hgl
             - Vinegar: org.vinegarhq.Vinegar
+            - ProtonUp-Qt: net.davidotek.pupgui2
+            - Lutris: net.lutris.Lutris
 
         Social:
           description: Social applications
