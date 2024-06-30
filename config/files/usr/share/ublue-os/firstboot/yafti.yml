@@ -97,6 +97,7 @@ screens:
             - LocalSend (Airdrop like application): org.localsend.localsend_app
             - Warp (Designed for GNOME): app.drey.Warp
             - Bitwarden: com.bitwarden.desktop
+            - Jdownloader: org.jdownloader.JDownloader
 
   final-screen:
     source: yafti.screen.title
