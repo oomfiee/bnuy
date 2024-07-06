@@ -99,6 +99,7 @@ screens:
             - Warp (Designed for GNOME): app.drey.Warp
             - Bitwarden: com.bitwarden.desktop
             - Jdownloader: org.jdownloader.JDownloader
+            - Codium (VSC but with no MS branding): com.vscodium.codium
 
   final-screen:
     source: yafti.screen.title
