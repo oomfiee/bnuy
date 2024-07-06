@@ -48,6 +48,7 @@ screens:
             - Steam: com.valvesoftware.Steam
             - PortProton: ru.linux_gaming.PortProton
             - Heroic: com.heroicgameslauncher.hgl
+            - Gamescope: org.freedesktop.Platform.VulkanLayer.gamescope
             - Vinegar: org.vinegarhq.Vinegar
             - ProtonUp-Qt: net.davidotek.pupgui2
             - Lutris: net.lutris.Lutris
