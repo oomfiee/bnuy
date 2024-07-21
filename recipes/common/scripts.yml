@@ -1,10 +1,10 @@
     type: script
     snippets:
-        # - "rpm-ostree install \
-        #    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-        #    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
-        # - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
-        # /etc/yum.repos.d/rpmfusion-nonfree-steam.repo"
+        - "rpm-ostree install \
+           https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+           https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+        - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+        /etc/yum.repos.d/rpmfusion-nonfree-steam.repo"
         - "rm -rf /usr/share/plasma/look-and-feel/org.fedoraproject.fedora.desktop /usr/share/sddm/themes/01-breeze-fedora /usr/share/google-chrome /usr/share/gnome-background-properties /usr/share/gnome /usr/share/gnome-shell /usr/share/kde4 /usr/share/gdm /usr/share/emacs /usr/share/deepin /usr/share/chromium /usr/share/adobe /usr/share/vim"
     scripts:
       #  - kernel.sh
