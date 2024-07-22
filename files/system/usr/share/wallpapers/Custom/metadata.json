@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "null",
+                "Name": "Custom wallapaper",
+            }
+        ],
+        "Id": "Custom wallapaper",
+        "License": "LGPLv3",
+        "Name": "Custom wallapaper",
+    }
+}
