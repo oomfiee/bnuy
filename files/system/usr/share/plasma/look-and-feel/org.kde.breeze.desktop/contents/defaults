@@ -11,7 +11,7 @@ Theme=breeze
 name=breeze
 
 [Wallpaper]
-Image=Next
+Image=Custom
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
