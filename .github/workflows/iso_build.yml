@@ -25,7 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         image_name:
-        #  - bnuy
+          - bnuy
           - bnuy-nvidia
         #  - bnuy-cosmic-nvidia
         #  - bnuy-cosmic
