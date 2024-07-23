@@ -45,6 +45,9 @@
        - steam-devices
        #- steam
        - gamescope
+       - virt-manager
+       - qemu-kvm
+       - quemu
        #- xorg-x11-drv-nvidia-cuda
        #- xorg-x11-drv-nvidia
        #- lutris
