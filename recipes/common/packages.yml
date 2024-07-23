@@ -47,7 +47,10 @@
        - gamescope
        - virt-manager
        - qemu-kvm
-       - quemu
+       - libguestfs-tools
+       - python3-libguestfs
+       - virt-top
+       - virt-viewer
        #- xorg-x11-drv-nvidia-cuda
        #- xorg-x11-drv-nvidia
        #- lutris
