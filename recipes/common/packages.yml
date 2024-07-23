@@ -45,7 +45,8 @@
        - steam-devices
        #- steam
        - gamescope
-       - virt-manager
+       #- virt-manager
+       - qt-virt-manager
        - qemu-kvm
        - libguestfs-tools
        - python3-libguestfs
