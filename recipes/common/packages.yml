@@ -25,13 +25,13 @@
       # - procps-ng-devel
       # - uksmd
        - android-tools
-       - intel-media-driver
-       - kernel
-       - kernel-core
-       - kernel-modules
-       - kernel-modules-core
-       - kernel-modules-extra
-       - strace
+       # - intel-media-driver
+       # - kernel
+       # - kernel-core
+       # - kernel-modules
+       # - kernel-modules-core
+       # - kernel-modules-extra
+       # - strace
        - btop
        - wget
        - curl
@@ -45,18 +45,19 @@
        - steam-devices
        #- steam
        - gamescope
-       - qemu-kvm
-       - libvirt
-       - virt-install
-       - virt-manager
-       - virt-viewer
-       - edk2-ovmf
-       - swtpm
-       - qemu-img
-       - guestfs-tools
-       - libosinfo
-       - tuned
+       # - qemu-kvm
+       # - libvirt
+       # - virt-install
+       # - virt-manager
+       # - virt-viewer
+       # - edk2-ovmf
+       # - swtpm
+       # - qemu-img
+       # - guestfs-tools
+       # - libosinfo
+       # - tuned
        - mpv
+       - yt-dlp
        #- xorg-x11-drv-nvidia-cuda
        #- xorg-x11-drv-nvidia
        #- lutris
