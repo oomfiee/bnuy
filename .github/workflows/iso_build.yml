@@ -2,11 +2,6 @@ name: Build ISOs
 
 on:
   workflow_dispatch:
-  workflow_call:
-  schedule:
-    - cron: "30 17 * * *" # build at 17:00 UTC every 30th
-                          # (20 minutes after last ublue images start building)
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-iso
   cancel-in-progress: true
@@ -22,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         image_name:
-        #  - bnuy
+         - bnuy
           - bnuy-nvidia
         #  - bnuy-cosmic-nvidia
         #  - bnuy-cosmic
