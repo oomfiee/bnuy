@@ -35,43 +35,41 @@ screens:
       groups:
         Browser:
           description: Browser applications
-          default: false
+          default: true
           packages:
             - Firefox: org.mozilla.firefox
             - Tor Browser: org.torproject.torbrowser-launcher
-            - Librewolf: io.gitlab.librewolf-community
+            #- Librewolf: io.gitlab.librewolf-community
 
         Games:
           description: Games applications.
-          default: false
+          default: true
           packages:
             - Steam: com.valvesoftware.Steam
-            - PortProton: ru.linux_gaming.PortProton
             - Heroic: com.heroicgameslauncher.hgl
-            - Gamescope: org.freedesktop.Platform.VulkanLayer.gamescope
-            - Vinegar: org.vinegarhq.Vinegar
             - ProtonUp-Qt: net.davidotek.pupgui2
             - Lutris: net.lutris.Lutris
+            - Prismlauncher: org.prismlauncher.PrismLauncher
 
         Social:
           description: Social applications
-          default: false
+          default: true
           packages:
             - Armcord: xyz.armcord.ArmCord
             - Nheko: io.github.NhekoReborn.Nheko
-            - SchildiChat: chat.schildi.desktop
-            - Vesktop (discord client): dev.vencord.Vesktop
+            #- SchildiChat: chat.schildi.desktop
+            #- Vesktop (discord client): dev.vencord.Vesktop
 
         Media:
           description: Media applications
-          default: false
+          default: true
           packages:
             - MPV: io.mpv.Mpv
-            - Freetube: io.freetubeapp.FreeTube
-            - Elisa: org.kde.elisa
-            - PlasmaTube: org.kde.plasmatube
+            #- Freetube: io.freetubeapp.FreeTube
+            #- Elisa: org.kde.elisa
+            #- PlasmaTube: org.kde.plasmatube
             - Inkscape: org.inkscape.Inkscape
-            - Curtail (Made For GNOME): com.github.huluti.Curtail
+            #- Curtail (Made For GNOME): com.github.huluti.Curtail
             - Gwenview (KDE image viewer): org.kde.gwenview
 
         System Apps:
@@ -87,7 +85,7 @@ screens:
           packages:
             - OnlyOffice: org.onlyoffice.desktopeditors
             - Okular (KDE PDF reader): org.kde.okular
-            - libreOffice: org.libreoffice.LibreOffice
+            #- libreOffice: org.libreoffice.LibreOffice
 
         utilities:
           description: utilities applications.
@@ -95,11 +93,11 @@ screens:
           packages:
             - KeepassXC: org.keepassxc.KeePassXC
             - ProtonVPN: com.protonvpn.www
-            - LocalSend (Airdrop like application): org.localsend.localsend_app
-            - Warp (Designed for GNOME): app.drey.Warp
-            - Bitwarden: com.bitwarden.desktop
+            #- LocalSend (Airdrop like application): org.localsend.localsend_app
+            #- Warp (Designed for GNOME): app.drey.Warp
+            #- Bitwarden: com.bitwarden.desktop
             - Jdownloader: org.jdownloader.JDownloader
-            - Codium (VSC but with no MS branding): com.vscodium.codium
+            #- Codium (VSC but with no MS branding): com.vscodium.codium
 
   final-screen:
     source: yafti.screen.title
