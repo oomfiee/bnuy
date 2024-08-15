@@ -56,10 +56,10 @@
        # - guestfs-tools
        # - libosinfo
        # - tuned
-       - mpv
-       - yt-dlp
+       #- mpv
+       #- yt-dlp
        #- xorg-x11-drv-nvidia-cuda
        #- xorg-x11-drv-nvidia
        #- lutris
-       #- plasma-workspace-x11
+       - plasma-workspace-x11
 
