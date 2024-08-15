@@ -15,7 +15,7 @@
       # - ibm-plex-sans-fonts
        - syncthing
        - trackma+qt
-       - wl-clipboard
+       #- wl-clipboard
        #- mesa-va-drivers-freeworld
        - ffmpeg
       # - jetbrains-mono-fonts
@@ -37,9 +37,9 @@
        - curl
        - distrobox
        - unar
-       - tealdeer
+       #- tealdeer
        #- imagemagick
-       - cowsay
+       #- cowsay
        #- rsync-gui
        #- rsync
        - steam-devices
