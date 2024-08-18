@@ -23,12 +23,12 @@
        - heif-pixbuf-loader
        - htop
        - kernel-tools
-       - libheif-freeworld
-       - libheif-tools
-       - libratbag-ratbagd
-       - lshw
-       - net-tools
-       - nvme-cli
+       #- libheif-freeworld
+       #- libheif-tools
+       #- libratbag-ratbagd
+       #- lshw
+       #- net-tools
+       #- nvme-cli
        # - nvtop
        - openrgb-udev-rules
        # - openssl
