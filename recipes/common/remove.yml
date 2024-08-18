@@ -30,20 +30,20 @@
        #- net-tools
        #- nvme-cli
        # - nvtop
-       - openrgb-udev-rules
+       #- openrgb-udev-rules
        # - openssl
        # - oversteer-udev
        # - pam-u2f
        # - pam_yubico
        # - pamu2fcfg
        # - pipewire-codec-aptx
-       - smartmontools
-       - solaar-udev
-       - symlinks
-       - tcpdump
-       - traceroute
-       - wireguard-tools
-       - apr-util-lmdb
-       - ocfs2-tools
-       - apr-util-openssl
+       #- smartmontools
+       #- solaar-udev
+       #- symlinks
+       #- tcpdump
+       #- traceroute
+       #- wireguard-tools
+       #- apr-util-lmdb
+       #- ocfs2-tools
+       #- apr-util-openssl
        - toolbox
