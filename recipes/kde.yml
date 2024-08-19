@@ -16,7 +16,7 @@ modules:
   - from-file: common/fonts.yml
   - from-file: common/debrand.yml
   - from-file: common/scripts.yml
-  - from-file: common/codec-remove.yml
+  #- from-file: common/codec-remove.yml
   - from-file: common/kinoite-packages.yml
   - from-file: common/kde-remove.yml
   - from-file: common/remove.yml
