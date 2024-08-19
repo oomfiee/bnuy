@@ -17,7 +17,7 @@
        - trackma+qt
        #- wl-clipboard
        #- mesa-va-drivers-freeworld
-       - ffmpeg
+       #- ffmpeg
       # - jetbrains-mono-fonts
       # - nextdns
       # - nheko
