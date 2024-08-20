@@ -21,7 +21,7 @@ modules:
   - from-file: common/kinoite-packages.yml
   - from-file: common/packages.yml
   - from-file: common/systemd-services.yml
-  - from-file: common/akmods-nvidia.yml
+  #- from-file: common/akmods-nvidia.yml
 
   - type: script
     snippets:
