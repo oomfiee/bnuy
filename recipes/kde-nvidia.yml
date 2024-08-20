@@ -3,7 +3,7 @@ name: bnuy-nvidia
 description: Based on fedora atomic, powered by carrots.
 
 # the base image to build on top of (FROM) and the version tag to use (ghcr.io/ublue-os/kinoite-nvidia)
-base-image: quay.io/fedora/fedora-kinoite
+base-image: ghcr.io/ublue-os/kinoite-nvidia
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -28,7 +28,7 @@ modules:
       # - "rpm-ostree install \
       #    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
       #    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
-      - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo /etc/yum.repos.d/rpmfusion-nonfree-steam.repo"
+      #- "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo /etc/yum.repos.d/rpmfusion-nonfree-steam.repo"
       - "rm -rf /usr/share/plasma/look-and-feel/org.fedoraproject.fedora.desktop /usr/share/sddm/themes/01-breeze-fedora /usr/share/google-chrome /usr/share/gnome-background-properties /usr/share/gnome /usr/share/gnome-shell /usr/share/kde4 /usr/share/gdm /usr/share/emacs /usr/share/deepin /usr/share/chromium /usr/share/adobe /usr/share/vim /usr/share/plymouth"
       - "echo '@nClientDownloadEnableHTTP2PlatformLinux 0 @fDownloadRateImprovementToAddAnotherConnection 1.0' >> ~/.var/app/com.valvesoftware.Steam/.steam/steam/steam_dev.cfg"
   - type: yafti
