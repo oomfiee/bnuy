@@ -1,5 +1,5 @@
 > [!CAUTION]
-> This is not designed to be a replacment to any distro, USE AT YOUR OWN RISK.
+> This is not designed to be a replacement to any distro, USE AT YOUR OWN RISK.
 
 # BNUYOS &nbsp; [![build-ublue](https://github.com/oomfiee/bnuy/actions/workflows/build.yml/badge.svg)](https://github.com/oomfiee/bnuy/actions/workflows/build.yml)
 
