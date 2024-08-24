@@ -43,7 +43,7 @@
        #- rsync-gui
        #- rsync
        - steam-devices
-       #- steam
+       - steam
        - gamescope
        # - qemu-kvm
        # - libvirt
