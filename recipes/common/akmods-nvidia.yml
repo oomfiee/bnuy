@@ -7,9 +7,6 @@
        - nvidia-kmod-common
        - nvidia-settings
        - nvidia-driver-cuda
-       - supergfxctl-plasmoid
-       - nvidia-container-toolkit
-       - supergfxctl
        - nvidia-persistenced
        - nvidia-modprobe
        - nvidia-driver-libs.i686
