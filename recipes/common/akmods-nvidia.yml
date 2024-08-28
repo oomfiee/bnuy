@@ -1,18 +1,4 @@
-    type: rpm-ostree
-    repos:
-       - https://negativo17.org/repos/fedora-nvidia.repo
+    type: akmods
+    base: asus # if not specified, classic "main" base is used by default
     install:
-       - nvidia-driver
-       - akmod-nvidia
-       - nvidia-kmod-common
-       - nvidia-settings
-       - nvidia-driver-cuda
-       - libnvidia-fbc
-       - libnvidia-ml
-       - libva-nvidia-driver
-       - mesa-vulkan-drivers
-       - nvidia-driver-cuda-libs
-       - nvidia-driver-libs
-       - nvidia-modprobe
-       - nvidia-persistenced
-       - nvidia-settings
+        - nvidia
