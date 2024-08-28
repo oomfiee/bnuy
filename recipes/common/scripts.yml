@@ -11,3 +11,4 @@
     scripts:
       #  - kernel.sh
       # - plymouth.sh
+       - nvidia.sh
