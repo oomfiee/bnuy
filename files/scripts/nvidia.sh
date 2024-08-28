@@ -5,11 +5,6 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-rpm-ostree kargs \
-    --append=rd.driver.blacklist=nouveau \
-    --append=modprobe.blacklist=nouveau \
-    --append=nvidia-drm.modeset=1
-
 # specific Initramfs fixes
 echo "options nvidia NVreg_TemporaryFilePath=/var/tmp" >> /usr/lib/modprobe.d/nvidia-atomic.conf
 cp /etc/modprobe.d/nvidia-modeset.conf /usr/lib/modprobe.d/nvidia-modeset.conf
