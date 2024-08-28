@@ -25,7 +25,7 @@ modules:
 
   - type: rpm-ostree
     remove:
-       - alsa-firmware
+       #- alsa-firmware
        - apr
        - apr-util
        - apr-util-lmdb
@@ -56,8 +56,8 @@ modules:
        - libva-utils
        - lshw
        - mesa-va-drivers-freeworld.x86_64
-       - net-tools
-       - ocfs2-tools
+       #- net-tools
+       #- ocfs2-tools
        - nvme-cli
        - nvtop
        - openrgb-udev-rules
