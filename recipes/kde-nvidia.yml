@@ -33,8 +33,8 @@ modules:
        - ffmpeg
        - ffmpeg-libs
        #- ffmpegthumbnailer
-       #- flatpak-spawn
-       #- fuse
+       - flatpak-spawn
+       - fuse
        - fzf
        - ublue-os-just
        - libavdevice
