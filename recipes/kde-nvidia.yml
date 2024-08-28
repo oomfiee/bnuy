@@ -30,9 +30,9 @@ modules:
        - apr-util
        - apr-util-lmdb
        - apr-util-openssl
-       #- ffmpeg
-       #- ffmpeg-libs
-       #- ffmpegthumbnailer
+       - ffmpeg
+       - ffmpeg-libs
+       - ffmpegthumbnailer
        #- flatpak-spawn
        #- fuse
        #- fzf
@@ -45,19 +45,19 @@ modules:
        - htop
        - intel-media-driver
        - kernel-tools
-       #- libcamera
-       #- libcamera-tools
-       #- libcamera-gstreamer
-       #- libcamera-ipa
-       #- libheif-freeworld
-       #- libheif-tools
+       - libcamera
+       - libcamera-tools
+       - libcamera-gstreamer
+       - libcamera-ipa
+       - libheif-freeworld
+       - libheif-tools
        - libratbag-ratbagd
        - libva-intel-driver
        - libva-utils
        - lshw
        - mesa-va-drivers-freeworld.x86_64
-       #- net-tools
-       #- ocfs2-tools
+       - net-tools
+       - ocfs2-tools
        - nvme-cli
        - nvtop
        - openrgb-udev-rules
@@ -68,7 +68,8 @@ modules:
        - pamu2fcfg
        - pipewire-codec-aptx
        - pipewire-plugin-libcamera
-       #- powerstat
+       - just
+       - powerstat
        - smartmontools
        - solaar-udev
        - squashfs-tools
