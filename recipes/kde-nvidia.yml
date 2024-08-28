@@ -45,12 +45,12 @@ modules:
        - htop
        - intel-media-driver
        - kernel-tools
-       - libcamera
-       - libcamera-tools
-       - libcamera-gstreamer
-       - libcamera-ipa
-       - libheif-freeworld
-       - libheif-tools
+       #- libcamera
+       #- libcamera-tools
+       #- libcamera-gstreamer
+       #- libcamera-ipa
+       #- libheif-freeworld
+       #- libheif-tools
        - libratbag-ratbagd
        - libva-intel-driver
        - libva-utils
