@@ -3,7 +3,7 @@ name: bnuy-nvidia
 description: Based on fedora atomic, powered by carrots.
 
 # the base image to build on top of (FROM) and the version tag to use (ghcr.io/ublue-os/kinoite-nvidia)
-base-image: ghcr.io/ublue-os/kinoite-nvidia
+base-image: quay.io/fedora/fedora-kinoite
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -21,64 +21,23 @@ modules:
   - from-file: common/kinoite-packages.yml
   - from-file: common/packages.yml
   - from-file: common/systemd-services.yml
-  #- from-file: common/akmods-nvidia.yml
+  - from-file: common/akmods-nvidia.yml
 
-  - type: rpm-ostree
-    remove:
-       #- alsa-firmware
-       - apr
-       - apr-util
-       - apr-util-lmdb
-       - apr-util-openssl
-       - ffmpeg
-       - ffmpeg-libs
-       #- ffmpegthumbnailer
-       - flatpak-spawn
-       #- fuse
-       - fzf
-       #- ublue-os-just
-       - libavdevice
-       - grub2-tools-extra
-       - heif-pixbuf-loader
-       - htop
-       - intel-media-driver
-       - kernel-tools
-       - libcamera
-       - libcamera-tools
-       - libcamera-gstreamer
-       - libcamera-ipa
-       - libheif-freeworld
-       - libheif-tools
-       - libratbag-ratbagd
-       - libva-intel-driver
-       - libva-utils
-       - lshw
-       - mesa-va-drivers-freeworld.x86_64
-       - net-tools
-       - ocfs2-tools
-       - nvme-cli
-       - nvtop
-       - openrgb-udev-rules
-       - openssl
-       - oversteer-udev
-       - pam-u2f
-       - pam_yubico
-       - pamu2fcfg
-       - pipewire-codec-aptx
-       - pipewire-plugin-libcamera
-       #- just
-       #- powerstat
-       - smartmontools
-       - solaar-udev
-       - squashfs-tools
-       - symlinks
-       - tcpdump
-       - tmux
-       - traceroute
-       - vim
-       - wireguard-tools
-       - zstd
-       - yubikey-manager
+  - type: script
+    scripts:
+      - nvidia.sh
+
+  - type: systemd
+    system:
+      enabled:
+        - nvidia-persistenced.service # Enabled (runs on system boot)
+      # disabled:
+      #   - bluetooth.service
+      #   - plymouth-start.service
+      #   - plymouth-read-write.service
+      #   - plymouth-quit.service
+      #   - plymouth-quit-wait.service
+
 
   - type: yafti
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
