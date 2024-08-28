@@ -34,14 +34,10 @@ modules:
        - ffmpeg-libs
        #- ffmpegthumbnailer
        - flatpak-spawn
-       - fuse
+       #- fuse
        - fzf
-       - ublue-os-just
+       #- ublue-os-just
        - libavdevice
-       - google-noto-sans-balinese-fonts
-       - google-noto-sans-cjk-fonts
-       - google-noto-sans-javanese-fonts
-       - google-noto-sans-sundanese-fonts
        - grub2-tools-extra
        - heif-pixbuf-loader
        - htop
@@ -70,8 +66,8 @@ modules:
        - pamu2fcfg
        - pipewire-codec-aptx
        - pipewire-plugin-libcamera
-       - just
-       - powerstat
+       #- just
+       #- powerstat
        - smartmontools
        - solaar-udev
        - squashfs-tools
