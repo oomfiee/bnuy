@@ -28,6 +28,8 @@ modules:
        - alsa-firmware
        - apr
        - apr-util
+       - apr-util-lmdb
+       - apr-util-openssl
        #- ffmpeg
        #- ffmpeg-libs
        #- ffmpegthumbnailer
@@ -55,6 +57,7 @@ modules:
        - lshw
        - mesa-va-drivers-freeworld.x86_64
        - net-tools
+       - ocfs2-tools
        - nvme-cli
        - nvtop
        - openrgb-udev-rules
@@ -65,7 +68,7 @@ modules:
        - pamu2fcfg
        - pipewire-codec-aptx
        - pipewire-plugin-libcamera
-       - powerstat
+       #- powerstat
        - smartmontools
        - solaar-udev
        - squashfs-tools
