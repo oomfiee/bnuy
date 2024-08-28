@@ -32,7 +32,7 @@ modules:
        - apr-util-openssl
        - ffmpeg
        - ffmpeg-libs
-       - ffmpegthumbnailer
+       #- ffmpegthumbnailer
        #- flatpak-spawn
        #- fuse
        #- fzf
