@@ -56,7 +56,7 @@ screens:
           default: true
           packages:
             - Armcord: xyz.armcord.ArmCord
-            - Nheko: io.github.NhekoReborn.Nheko
+            - Nheko: im.nheko.Nheko
             #- SchildiChat: chat.schildi.desktop
             #- Vesktop (discord client): dev.vencord.Vesktop
 

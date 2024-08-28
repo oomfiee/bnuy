@@ -34,5 +34,35 @@ modules:
   #   #    - syncthing@oomfie.service # Enabled (runs on system boot)
   #      - nvidia-persistenced.service
 
-  - type: yafti
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    user:
+      # If no repo information is specified, Flathub will be used by default
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - oorg.mozilla.firefox
+        - org.torproject.torbrowser-launcher
+        - com.valvesoftware.Steam
+        - com.heroicgameslauncher.hgl
+        - net.davidotek.pupgui2
+        - net.lutris.Lutris
+        - org.prismlauncher.PrismLauncher
+        - xyz.armcord.ArmCord
+        - im.nheko.Nheko
+        - io.mpv.Mpv
+        - org.inkscape.Inkscape
+        - org.kde.gwenview
+        - org.gtk.Gtk3theme.Breeze
+        - org.onlyoffice.desktopeditors
+        - org.kde.okular
+        - org.keepassxc.KeePassXC
+        - com.protonvpn.www
+        - org.jdownloader.JDownloader
+
+      # remove:
+      #   - org.gnome.eog
+
+  # - type: yafti
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
