@@ -2,7 +2,7 @@
     system:
       enabled:
     #    - syncthing@oomfie.service # Enabled (runs on system boot)
-        - nvidia-persistenced.service
+    #    - nvidia-persistenced.service
       disabled:
         - bluetooth.service
         - plymouth-start.service

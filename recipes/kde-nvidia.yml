@@ -28,5 +28,11 @@ modules:
     scripts:
        - nvidia.sh
 
+  - type: systemd
+    system:
+      enabled:
+    #    - syncthing@oomfie.service # Enabled (runs on system boot)
+       - nvidia-persistenced.service
+
   - type: yafti
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
