@@ -35,7 +35,9 @@ modules:
        #- ffmpegthumbnailer
        #- flatpak-spawn
        #- fuse
-       #- fzf
+       - fzf
+       - ublue-os-just
+       - libavdevice
        - google-noto-sans-balinese-fonts
        - google-noto-sans-cjk-fonts
        - google-noto-sans-javanese-fonts
