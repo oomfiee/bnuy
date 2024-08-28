@@ -7,3 +7,12 @@
        - nvidia-kmod-common
        - nvidia-settings
        - nvidia-driver-cuda
+       - libnvidia-fbc
+       - libnvidia-ml
+       - libva-nvidia-driver
+       - mesa-vulkan-drivers
+       - nvidia-driver-cuda-libs
+       - nvidia-driver-libs
+       - nvidia-modprobe
+       - nvidia-persistenced
+       - nvidia-settings
