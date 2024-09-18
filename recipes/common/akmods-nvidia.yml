@@ -1,4 +1,19 @@
-    type: akmods
-    nvidia: true
+    type: rpm-ostree
+    repos:
+       - https://negativo17.org/repos/fedora-nvidia.repo
     install:
-        - nvidia
+       - nvidia-driver
+       - akmod-nvidia
+       - nvidia-kmod-common
+       - nvidia-settings
+       - nvidia-driver-cuda
+       - nvidia-modprobe
+       - nvidia-settings
+       - nvidia-xconfig
+       - dkms-nvidia
+       - libnvidia-ml
+       - nvidia-driver-cuda-libs
+       - nvidia-persistenced
+       - kmod-nvidia
+    remove:
+      - *nvidia*
