@@ -10,7 +10,7 @@
        - nvidia-modprobe
        - nvidia-settings
        - nvidia-xconfig
-       - dkms-nvidia
+       #- dkms-nvidia
        - libnvidia-ml
        - nvidia-driver-cuda-libs
        - nvidia-persistenced
