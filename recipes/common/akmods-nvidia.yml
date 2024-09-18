@@ -15,5 +15,5 @@
        - nvidia-driver-cuda-libs
        - nvidia-persistenced
        - kmod-nvidia
-    remove:
-      - *nvidia*
+    # remove:
+    #   - *nvidia*
