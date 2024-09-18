@@ -1,11 +1,11 @@
     type: rpm-ostree
     remove:
+       - libpostproc-free
        - ffmpeg-free
        - libavcodec-free
        - libavformat-free
        - libavdevice-free
        - libavfilter-free
        - libavutil-free
-       - libpostproc-free
        - libswresample-free
        - libswscale-free
