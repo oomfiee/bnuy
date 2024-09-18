@@ -42,7 +42,7 @@
        #- cowsay
        #- rsync-gui
        #- rsync
-       - steam-devices
+       #- steam-devices
        #- steam
        - gamescope
        # - qemu-kvm
