@@ -9,6 +9,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: common/akmods-nvidia.yml
   - from-file: common/shells.yml
   - from-file: common/scripts.yml
   - from-file: common/files.yml
@@ -21,7 +22,6 @@ modules:
   - from-file: common/kinoite-packages.yml
   - from-file: common/packages.yml
   - from-file: common/systemd-services.yml
-  - from-file: common/akmods-nvidia.yml
 
 
   # - type: script
