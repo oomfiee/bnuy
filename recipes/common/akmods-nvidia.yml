@@ -10,6 +10,6 @@ modules:
     - type: script
       scripts:
         - installnvidiatoolkitpolicy.sh
-        - removeunusedrepos.sh
+      #  - removeunusedrepos.sh
         - setearlyloading.sh
         - setdrmvariables.sh
