@@ -1,7 +1,7 @@
     type: rpm-ostree
     repos:
        #- https://copr.fedorainfracloud.org/coprs/derisis13/ani-cli/repo/fedora-40/derisis13-ani-cli-fedora-%OS_VERSION%.repo
-       - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/dyskette-trackma-fedora-%OS_VERSION%.repo
+       # - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/dyskette-trackma-fedora-%OS_VERSION%.repo
        #- https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
        #- https://repo.nextdns.io/nextdns.repo
        #- https://negativo17.org/repos/fedora-multimedia.repo
@@ -14,7 +14,7 @@
       # - toolbx
       # - ibm-plex-sans-fonts
        - syncthing
-       - trackma+qt
+      # - trackma+qt
        #- wl-clipboard
        #- mesa-va-drivers-freeworld
        #- ffmpeg
