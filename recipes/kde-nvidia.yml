@@ -53,7 +53,7 @@ modules:
         - net.davidotek.pupgui2
         - net.lutris.Lutris
         - org.prismlauncher.PrismLauncher
-        - xyz.armcord.ArmCord
+        - com.discordapp.Discord
         - im.nheko.Nheko
         - io.mpv.Mpv
         - org.inkscape.Inkscape
