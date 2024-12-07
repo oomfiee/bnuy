@@ -26,7 +26,7 @@ modules:
 
   - type: script
     snippets:
-       - "rm /etc/yum.repos.d/fedora-multimedia.repo"
+       #- "rm /etc/yum.repos.d/fedora-multimedia.repo"
        - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
         /etc/yum.repos.d/rpmfusion-nonfree-steam.repo"
   #   scripts:
