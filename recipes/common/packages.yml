@@ -25,6 +25,8 @@
       # - procps-ng-devel
       # - uksmd
        - android-tools
+       - kernel-modules-core-uname-r
+       - kernel-uname-r
        # - intel-media-driver
        # - kernel
        # - kernel-core
