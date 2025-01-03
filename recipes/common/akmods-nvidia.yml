@@ -1,6 +1,6 @@
 modules:
     - type: akmods
-      base: nvidia # if not specified, classic "main" base is used by default
+      base: nvidia-open # if not specified, classic "main" base is used by default
       install:
         - nvidia
         - v4l2loopback
