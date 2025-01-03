@@ -1,20 +1,21 @@
-    type: rpm-ostree
-    repos:
-       #- https://copr.fedorainfracloud.org/coprs/derisis13/ani-cli/repo/fedora-40/derisis13-ani-cli-fedora-%OS_VERSION%.repo
-       # - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/dyskette-trackma-fedora-%OS_VERSION%.repo
-       #- https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
-       #- https://repo.nextdns.io/nextdns.repo
-       #- https://negativo17.org/repos/fedora-multimedia.repo
-    install:
-      # - micro
-      # - kate
-      # - fonts
-       - git
-       - fastfetch
-      # - toolbx
-      # - ibm-plex-sans-fonts
-       - syncthing
-      # - trackma+qt
+modules:
+    - type: rpm-ostree
+     repos:
+        #- https://copr.fedorainfracloud.org/coprs/derisis13/ani-cli/repo/fedora-40/derisis13-ani-cli-fedora-%OS_VERSION%.repo
+        # - https://copr.fedorainfracloud.org/coprs/dyskette/trackma/repo/fedora-%OS_VERSION%/dyskette-trackma-fedora-%OS_VERSION%.repo
+        #- https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-addons/repo/fedora-%OS_VERSION%/bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
+        #- https://repo.nextdns.io/nextdns.repo
+        #- https://negativo17.org/repos/fedora-multimedia.repo
+     install:
+       # - micro
+       # - kate
+       # - fonts
+        - git
+        - fastfetch
+       # - toolbx
+       # - ibm-plex-sans-fonts
+        - syncthing
+       # - trackma+qt
        #- wl-clipboard
        #- mesa-va-drivers-freeworld
        #- ffmpeg
@@ -24,9 +25,9 @@
       # - libcap-ng-devel
       # - procps-ng-devel
       # - uksmd
-       - android-tools
-       - kernel-modules-core-uname-r
-       - kernel-uname-r
+        - android-tools
+        - kernel-modules-core-uname-r
+        - kernel-uname-r
        # - intel-media-driver
        # - kernel
        # - kernel-core
@@ -34,11 +35,11 @@
        # - kernel-modules-core
        # - kernel-modules-extra
        # - strace
-       - btop
-       - wget
-       - curl
-       - distrobox
-       - unar
+        - btop
+        - wget
+        - curl
+        - distrobox
+        - unar
        #- tealdeer
        #- imagemagick
        #- cowsay
@@ -46,7 +47,7 @@
        #- rsync
        #- steam-devices
        #- steam
-       - gamescope
+        - gamescope
        # - qemu-kvm
        # - libvirt
        # - virt-install
@@ -64,5 +65,5 @@
        #- xorg-x11-drv-nvidia
        #- lutris
        #- steam
-       - plasma-workspace-x11
+        - plasma-workspace-x11
 

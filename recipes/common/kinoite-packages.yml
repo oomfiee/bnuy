@@ -1,13 +1,14 @@
-    type: rpm-ostree
-    install:
-       - xdg-desktop-portal-kde
-       - xdg-desktop-portal
-       - plasma-firewall
-       - plasma-firewall-firewalld
-       - icoutils
-       - kate
-       - kcron
-       - kio-admin
-       - ksshaskpass
-       - xwaylandvideobridge
-       - default-fonts-cjk-sans
+modules:
+   - type: rpm-ostree
+     install:
+        - xdg-desktop-portal-kde
+        - xdg-desktop-portal
+        - plasma-firewall
+        - plasma-firewall-firewalld
+        - icoutils
+        - kate
+        - kcron
+        - kio-admin
+        - ksshaskpass
+        - xwaylandvideobridge
+        - default-fonts-cjk-sans

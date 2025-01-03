@@ -1,15 +1,16 @@
-    type: rpm-ostree
-    install:
-       - generic-release
-       - generic-release-common
-    remove:
-       #- Fedora-release-identity-kde
-       #- fedora-release
-       - fedora-release-identity-kinoite
-       - fedora-release-kinoite
-       - fedora-release-common
-       #- fedora-release-identity-basic
-       #- fedora-release-identity-kde
-       #- fedora-release-common
-       #- fedora-logos
-       #- maliit-keyboard
+modules:
+   - type: rpm-ostree
+     install:
+        - generic-release
+        - generic-release-common
+     remove:
+        #- Fedora-release-identity-kde
+        #- fedora-release
+        - fedora-release-identity-kinoite
+        - fedora-release-kinoite
+        - fedora-release-common
+        #- fedora-release-identity-basic
+        #- fedora-release-identity-kde
+        #- fedora-release-common
+        #- fedora-logos
+        #- maliit-keyboard
