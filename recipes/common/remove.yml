@@ -3,15 +3,15 @@ modules:
      remove:
        # example: removing firefox (in favor of the flatpak)
        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - plymouth
-        - plymouth-scripts
-        - plymouth-plugin-label
-        - plymouth-theme-spinner
-        - plymouth-plugin-two-step
-        - plymouth-system-theme
-        - firewall-config
+       - firefox
+       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+       - plymouth
+       - plymouth-scripts
+       - plymouth-plugin-label
+       - plymouth-theme-spinner
+       - plymouth-plugin-two-step
+       - plymouth-system-theme
+       - firewall-config
        #- maliit-keyboard
        # - apr
        # - apr-util
@@ -47,4 +47,4 @@ modules:
        # - apr-util-lmdb
        # - ocfs2-tools
        # - apr-util-openssl
-        - toolbox
+       - toolbox

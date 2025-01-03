@@ -1,9 +1,6 @@
 modules:
    - type: systemd
      system:
-       enabled:
-     #    - syncthing@oomfie.service # Enabled (runs on system boot)
-     #    - nvidia-persistenced.service
        disabled:
          - bluetooth.service
          - plymouth-start.service
@@ -11,16 +8,3 @@ modules:
          - plymouth-quit.service
          - plymouth-quit-wait.service
     #    - flatpak-system-update.timer
-    #  masked:
-    #    - example.service # Masked (does not run on system boot, under any circumstances)
-    #  unmasked:
-    #    - example.service # Unmasked (runs on system boot, even if previously masked)
-    #user:
-    #  enabled:
-    #    - example.timer # Enabled (runs for the user)
-    #  disabled:
-    #    - example.service # Disabled (does not run for the user, unless other unit strictly requires it)
-    #  masked:
-    #    - example.service # Masked (does not run for the user, under any circumstances)
-    #  unmasked:
-    #    - example.service # Unmasked (runs for the user, even i
