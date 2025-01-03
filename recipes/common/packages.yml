@@ -28,6 +28,7 @@ modules:
         - android-tools
         - kernel-modules-core-uname-r
         - kernel-uname-r
+        - ocl-icd
        # - intel-media-driver
        # - kernel
        # - kernel-core

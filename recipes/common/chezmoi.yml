@@ -1,8 +1,7 @@
 modules:
    - type: chezmoi
-     install_chezmoi: true
      repository: "https://gitlab.com/oomfie/chezmoi"
-     enable_all_users: true
+     all-users: true
      run_every: '1d'
      wait_after_boot: '5m'
      disable_init: false
