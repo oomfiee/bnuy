@@ -3,3 +3,5 @@ modules:
       base: nvidia # if not specified, classic "main" base is used by default
       install:
         - nvidia
+        - v4l2loopback
+        - winesync
