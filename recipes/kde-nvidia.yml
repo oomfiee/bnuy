@@ -18,6 +18,10 @@ modules:
     scripts:
       - fixupstreamicdloaderbug.sh
 
+  - type: containerfile
+    snippets:
+       - COPY --from=ghcr.io/ublue-os/main-kernel:41 /tmp/rpms /tmp/rpms/kernel
+
   - from-file: common/shells.yml
   - from-file: common/scripts.yml
   - from-file: common/files.yml
