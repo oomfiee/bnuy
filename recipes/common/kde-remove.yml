@@ -4,5 +4,5 @@ modules:
         - adwaita-gtk2-theme
         - highcontrast-icon-theme
         - plasma-disks
-        #- plasma-welcome
-        #- plasma-discover-rpm-ostree
+        - plasma-welcome
+        - plasma-discover-rpm-ostree

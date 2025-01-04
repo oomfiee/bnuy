@@ -21,7 +21,7 @@ jobs:
           - bnuy-nvidia
         #  - bnuy-cosmic-nvidia
         #  - bnuy-cosmic
-        major_version: [40]
+        major_version: [41]
     steps:
 
       - name: Free Disk Space (Ubuntu)
