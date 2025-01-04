@@ -2,8 +2,4 @@ modules:
    - type: chezmoi
      repository: "https://gitlab.com/oomfie/chezmoi"
      all-users: true
-     run_every: '1d'
-     wait_after_boot: '5m'
-     disable_init: false
-     disable_update: false
-     changed-file-policy: "skip"
+     file-conflict-policy: "skip"
