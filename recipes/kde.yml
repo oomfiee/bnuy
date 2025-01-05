@@ -10,6 +10,16 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+
+
+  - type: script
+    snippets:
+       #- "rm /etc/yum.repos.d/fedora-multimedia.repo"
+       - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+        /etc/yum.repos.d/rpmfusion-nonfree-steam.repo /etc/yum.repos.d/fedora-cisco-openh264.repo"
+    scripts:
+      - fixupstreamicdloaderbug.sh
+
   - from-file: common/shells.yml
   - from-file: common/files.yml
   - from-file: common/chezmoi.yml
