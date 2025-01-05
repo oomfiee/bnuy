@@ -1,4 +1,4 @@
 modules:
    - type: script
      snippets:
-      - "rpm-ostree override remove libavcodec-free libavfilter-free libavformat-free libavutil-free libpostproc-free libswresample-free libswscale-free --install ffmpegthumbnailer"
+      - "rpm-ostree override remove libavcodec-free libavfilter-free libavformat-free libavutil-free libpostproc-free libswresample-free libswscale-free ffmpeg-free libavdevice-free --install ffmpegthumbnailer ffmpeg"
