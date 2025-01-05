@@ -10,4 +10,4 @@ modules:
             libswresample-free \
             libswscale-free \
             --install \
-            ffmpegthumbnailer"
+            ffmpegthumbnailer ffmpeg"
