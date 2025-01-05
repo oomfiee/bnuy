@@ -6,3 +6,4 @@ modules:
         - plasma-disks
         - plasma-welcome
         - plasma-discover-rpm-ostree
+        - plasma-welcome-fedora
