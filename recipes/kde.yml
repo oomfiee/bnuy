@@ -4,7 +4,7 @@ name: bnuy
 description: Based on fedora atomic, powered by carrots.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite-nvidia
+base-image: quay.io/fedora-ostree-desktops/kinoite
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
