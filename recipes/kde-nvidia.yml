@@ -15,6 +15,7 @@ modules:
        #- "rm /etc/yum.repos.d/fedora-multimedia.repo"
        - "rm /etc/yum.repos.d/fedora-updates-archive.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
         /etc/yum.repos.d/rpmfusion-nonfree-steam.repo /etc/yum.repos.d/fedora-cisco-openh264.repo"
+       - "echo 'options nvidia-drm modeset=1 fbdev=1' > /usr/lib/modprobe.d/nvidia-modeset.conf cp /usr/lib/modprobe.d/nvidia-modeset.conf /etc/modprobe.d/nvidia-modeset.conf"
     scripts:
       - fixupstreamicdloaderbug.sh
 
@@ -23,7 +24,7 @@ modules:
        #- COPY --from=ghcr.io/ublue-os/akmods:main-41 /rpms /tmp/rpms
        #- RUN find /tmp/rpms
        #- RUN rpm -q ublue-os-akmods-addons || rpm-ostree install /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
-       - COPY --from=ghcr.io/ublue-os/bazzite-kernel:41 /tmp/rpms /tmp/rpms/kernel
+       - COPY --from=ghcr.io/ublue-os/main-kernel:41 /tmp/rpms /tmp/rpms/kernel
   - type: script
     scripts:
       - installsignedkernel.sh
