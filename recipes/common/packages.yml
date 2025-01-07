@@ -16,7 +16,7 @@ modules:
        # - ibm-plex-sans-fonts
         - syncthing
        # - trackma+qt
-       #- wl-clipboard
+        - wl-clipboard
        #- mesa-va-drivers-freeworld
        #- ffmpeg
       # - jetbrains-mono-fonts
@@ -49,6 +49,8 @@ modules:
        #- steam-devices
        #- steam
         - gamescope
+        - plasma-firewall-firewalld
+        - plasma-firewall
        # - qemu-kvm
        # - libvirt
        # - virt-install
