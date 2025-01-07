@@ -64,7 +64,8 @@ modules:
         - net.davidotek.pupgui2
         - net.lutris.Lutris
         - org.prismlauncher.PrismLauncher
-        - com.discordapp.Discord
+        #- com.discordapp.Discord
+        - dev.vencord.Vesktop
         - im.nheko.Nheko
         - io.mpv.Mpv
         - org.inkscape.Inkscape
